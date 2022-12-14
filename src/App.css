@@ -5,12 +5,31 @@
 }
 
 .App {
-  background: #000;
-  color: #fff;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
+  color: #fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: .5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #461E5D;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F44881;
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c03664;
 }

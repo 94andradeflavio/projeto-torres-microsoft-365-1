@@ -5,11 +5,10 @@ import './App.css';
 // Chamar SCORM Provider
 
 // Components
-import Navigation from './components/navigation';
+import Navbar from './components/Navbar';
 
 // Rotas
 import Home from './pages/Home'
-import TesteRota from './pages/TesteRota'
 
 // Import SCORM Hook
 import useScorm from './hooks/useScorm'
@@ -25,10 +24,9 @@ function App() {
 
   return (
         <div className="App">
-          <Navigation />
+          <Navbar />
           <Routes>
             <Route path='*' element={<Home />} />
-            <Route path='/testerota' element={<TesteRota />} />
           </Routes>
         </div>
   );

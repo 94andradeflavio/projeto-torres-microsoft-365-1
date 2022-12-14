@@ -1,0 +1,126 @@
+.navigation {
+    position: fixed;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+nav {
+    width: 100%;
+    background-color: #461E5D;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    position: relative;
+    top: 2rem;
+}
+
+button.burger-menu {
+    background: none;
+    height: 100%;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    row-gap: .4rem;
+    cursor: pointer;
+    border: none;
+}
+
+.burger-bar {
+    width: 100%;
+    height: .3rem;
+    background-color: #F44881;
+    border-radius: .5rem;
+}
+
+.menu {
+    background-color: rgba(70,30,93,.5);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    padding: 2rem;
+    padding-top: 7rem;
+    width: 75vw;
+    max-width: 25rem;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    cursor: auto;
+}
+
+.menu.hidden { 
+    opacity: 0;
+    transform: translateX(100%);
+    transition: ease-out .5s;    
+}
+
+.menu.visible { 
+    opacity: 1;
+    transform: translateX(0);
+    transition: ease-out .5s;
+}
+
+.burger-bar.clicked:nth-child(1) {
+    transform-origin: left;
+    transform: rotate(26deg) translate(3%, 10%);
+    transition: ease-out .5s;
+}
+.burger-bar.clicked:nth-child(2) {
+    transform: scale(.1);
+    transition: ease-out .5s;
+}
+.burger-bar.clicked:nth-child(3) {
+    transform-origin: left;
+    transform: rotate(-26deg) translate(3%, -10%);
+    transition: ease-out .5s;
+}
+
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.burger-bar.unclicked:nth-child(1) {
+    width: 100%;
+}
+.burger-bar.unclicked:nth-child(2) {
+    width: 75%;
+}
+.burger-bar.unclicked:nth-child(3) {
+    width: 40%;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    cursor: pointer;
+    margin-bottom: .6rem;
+}
+
+.menu ul li span {
+    position: relative;
+    font-size: 2rem;
+    padding-right: 2rem;
+
+}
+
+.menu ul li span::after {
+    content: '';
+    background-color: #F44881;
+    position: absolute;
+    border-radius: 1rem;
+    width: 0%;
+    height: .3rem;
+    bottom: 0;
+    left: 0;
+    transition: width .2s linear;
+}
+
+.menu ul li:hover span::after {
+    width: 100%;
+}

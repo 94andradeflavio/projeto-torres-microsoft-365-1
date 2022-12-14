@@ -1,41 +1,44 @@
-import { useEffect, useState } from "react"
-import useScorm from "../../hooks/useScorm"
-
+import React from 'react'
 import './index.css'
 
+import Section from '../../components/Section';
+import Container from '../../components/Container';
+import Logo from '../../components/Sections-Components/Logo';
+import TitleSubtitle from '../../components/Sections-Components/TitleSubtitle';
+import ImageWithText from '../../components/Sections-Components/ImageWithText';
+import SmallerCarrousel from '../../components/Sections-Components/SmallerCarrousel';
+
+import bg1 from '../../assets/images/bloco-1/bg.jpg'
+import bg2 from '../../assets/images/bloco-2/bg.jpg'
+
+import iwt1 from '../../assets/images/bloco-2/img.png'
+
 const Home = () => {
-    const { scorm } = useScorm()
-    const [name, setName] = useState('')
-    const [nota, setNota] = useState('')
-    const [passed, setPassed] = useState(false)
-
-    const handleName = () => {
-        setName(scorm.getLearnerName() === 'null' ? 'anônimo' : scorm.getLearnerName())
-    }
-
-    const handleScore = (ev) => {
-        setNota(Math.trunc(ev.target.value))
-        setPassed(nota >= 80 ? true : false)
-
-        scorm.setScore(nota)
-    }
-
-    useEffect(() => {
-        setName(scorm.getLearnerName() === 'null' ? 'anônimo' : scorm.getLearnerName())
-        setNota(scorm.getScore() === 'null' ? '0' : scorm.getScore())
-    },[scorm])
-    
-    useEffect(() => {
-        setPassed(nota >= 80 ? true : false)
-    }, [nota])
 
     return (
-        <div>
-            <h1>Bem-vindo a página home</h1>
-            <p><button onClick={handleName}>Clique aqui para mostrar seu nome</button>: <strong>{name}</strong></p>
-            <p>Sua nota atual é: <strong className={passed ? 'nota passed' : 'nota'}>{nota}%</strong></p>
-            <input type="range" min="0" max="100" value={nota} onChange={handleScore} onClick={handleScore} />
-        </div>
+        <>
+            <Section bg={bg1}>
+                <Container>
+                    <Logo />
+                </Container>
+            </Section>
+            <Section bg={bg2}>
+                <Container>
+                    <TitleSubtitle
+                        title="Google Workspace"
+                        subtitle="Traga o cliente para o digital!" />
+                    <ImageWithText imgSource={iwt1} align="end">
+                        <p>
+                            Em uma realidade cada vez mais impactada pela transformação digital, uma empresa precisa 
+                            estar preparada para lidar com os desafios que se conectam ao mercado, aos consumidores 
+                            e ao seu desenvolvimento.
+                        </p>
+                        <button>Clique nos botões para ver alguns exemplos:</button>
+                    </ImageWithText>
+                    <SmallerCarrousel />
+                </Container>
+            </Section>
+        </>
     )
 }
 
