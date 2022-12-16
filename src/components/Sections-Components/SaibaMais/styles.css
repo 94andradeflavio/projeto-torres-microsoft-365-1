@@ -1,0 +1,72 @@
+.saiba-mais {
+    width: 100%;
+    max-width: 45rem;
+    margin: 4rem auto;
+    padding: 2rem 3rem;
+    border: .2rem solid #fff;
+    position: relative;
+}
+
+.saiba-mais::before, .saiba-mais::after {
+    content: '';
+    /* background-color: rgba(0,0,0,.2); */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    mix-blend-mode: color-dodge;
+}
+
+.saiba-mais::before {
+    box-shadow: inset 0px 0px 8px 1px #ff9305;
+}
+
+.saiba-mais::after {
+    /* border: .2rem solid transparent; */
+    box-shadow: 0px 0px 8px 3px #ff9305;
+    box-sizing: content-box;
+}
+
+.saiba-mais h4 {
+    color: #7d05a4;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.saiba-mais h4 span {
+    margin-left: 2rem;
+    color: #fff;
+}
+
+.saiba-mais p {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.saiba-mais button {
+    background-color: #fff;
+    color: #461E5D;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .2rem 1.5rem;
+    border: none;
+}
+
+.saiba-mais button:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: .2rem solid #fff;
+    box-sizing: border-box;
+    top: .4rem;
+    left: -.4rem;
+    mix-blend-mode: color;
+}

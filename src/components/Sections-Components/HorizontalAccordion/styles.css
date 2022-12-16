@@ -1,0 +1,90 @@
+:root {
+    --acordion-after-color: rgba(0,177,244,1);
+}
+
+.horizontal-accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-accordion .accordion {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-accordion .accordion[orientation="right"] {
+    flex-direction: row-reverse;
+}
+
+.horizontal-accordion .accordion img {
+    width: 7rem;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.horizontal-accordion .accordion .content {
+    color: #7d05a4;
+    padding: 1rem 3rem;
+    width: 100%;
+    max-width: 40rem;
+    opacity: 0;
+    transform-origin: left top;
+    transform: scale(0, 1);
+    transition: ease-out .5s;
+    user-select: none;
+}
+
+.horizontal-accordion .accordion[orientation="right"] .content {
+    transform-origin: right top;
+}
+
+.horizontal-accordion .accordion.show .content {
+    transition: ease-out .5s;
+    transform: scale(1, 1);
+    position: relative;
+    opacity: 1;
+}
+
+.horizontal-accordion .accordion .content:after {
+    content: '';
+    position: absolute;
+    mix-blend-mode: color;
+    top: .5rem;
+    width: 85%;
+    height: 100%;
+    z-index: -1;
+}
+
+.horizontal-accordion .accordion[orientation="left"] .content {
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 25%);
+    padding-left: 5rem;
+    margin-left: -2rem;
+}
+
+.horizontal-accordion .accordion[orientation="left"] .content:after {
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, var(--acordion-after-color) 25%);
+    right: -.5rem;
+}
+
+.horizontal-accordion .accordion[orientation="right"] .content {
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 25%);
+    padding-right: 5rem;
+    margin-right: -2rem;
+}
+
+.horizontal-accordion .accordion[orientation="right"] .content:after {
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%, var(--acordion-after-color) 25%);
+    left: -.5rem;
+}
+
+.horizontal-accordion .accordion .content h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.horizontal-accordion .accordion .content p {
+    font-size: 1rem;
+    font-weight: 500;
+}

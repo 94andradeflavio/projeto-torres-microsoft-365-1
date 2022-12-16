@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 40rem;
     margin: 0 auto;
     margin-top: 2rem;
     font-weight: 700;
@@ -14,12 +13,20 @@
     margin: 0 .5rem;
 }
 
+.image-with-text p {
+    font-size: 1.4rem;
+}
+
 .image-with-text.start {
     align-items: flex-start;
 }
 
 .image-with-text.end {
     align-items: flex-end;
+}
+
+.image-with-text.reverse {
+    flex-direction: row-reverse;
 }
 
 .image-with-text button {
@@ -31,4 +38,23 @@
     border: 2px solid #ff9305;
     box-shadow: 0px 0px 4px 1px #fff;
     cursor: pointer;
+    font-size: inherit;
+}
+
+.image-with-text .vivo-empresas {
+    padding-right: 2.5rem;
+}
+
+.image-with-text .vivo-empresas h4 {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.image-with-text .vivo-empresas h4 + h4 {
+    margin-bottom: 2rem;
+}
+
+.image-with-text .vivo-empresas h4 span {
+    color: #7d05a4;
+    margin-left: 2rem;
 }
