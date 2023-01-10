@@ -12,7 +12,7 @@ const TabViewWithImage = () => {
     }
 
     return (
-        <div className="tab-view">
+        <div className="tab-view-with-image">
             <div className="tab-icons">
                 { data.map((item, index) => (
                     <div className={ `icon ${ index === indexItem ? 'active' : '' }` } key={index} onClick={_ => chooseItem(index)}>

@@ -3,34 +3,37 @@ import './index.css'
 
 // Components
 import Section from '../../components/Section';
+import Carrousel from '../../components/Sections-Components/Carrousel';
 import Container from '../../components/Container';
 import Logo from '../../components/Sections-Components/Logo';
 import ImageWithText from '../../components/Sections-Components/ImageWithText';
-import WhatIsWorkspace from '../../components/Sections-Components/WhatIsWorkspace';
-import HorizontalAccordion from '../../components/Sections-Components/HorizontalAccordion';
-import LargerCarrousel from '../../components/Sections-Components/LargerCarrousel';
+// import WhatIsWorkspace from '../../components/Sections-Components/WhatIsWorkspace';
+// import HorizontalAccordion from '../../components/Sections-Components/HorizontalAccordion';
+// import LargerCarrousel from '../../components/Sections-Components/LargerCarrousel';
 import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
 import Video from '../../components/Sections-Components/Video';
 import SaibaMais from '../../components/Sections-Components/SaibaMais';
+import TabView from '../../components/Sections-Components/TabView';
 import TabViewWithImage from '../../components/Sections-Components/TabViewWithImage';
 
 // Backgrounds
 import bg1 from '../../assets/images/bg-1.png'
 // import bg2 from '../../assets/images/bg-2.png'
-import bg3 from '../../assets/images/bg-3.png'
-import bg4 from '../../assets/images/bg-4.png'
-import bg5 from '../../assets/images/bg-5.png'
+// import bg3 from '../../assets/images/bg-3.png'
+// import bg4 from '../../assets/images/bg-4.png'
+// import bg5 from '../../assets/images/bg-5.png'
 import bg6 from '../../assets/images/bg-6.png'
 import bg7 from '../../assets/images/bg-7.png'
 import bg8 from '../../assets/images/bg-8.png'
 
 import bgWall from '../../assets/images/bg-wall.png'
 import bgMaskPurple from '../../assets/images/bg-mask-purple.png'
+import bgAsian from '../../assets/images/bg-asian.png'
 
 // Images
 
 // Image With Text
-import iwt2 from '../../assets/images/imageWithText/img-2.png'
+// import iwt2 from '../../assets/images/imageWithText/img-2.png'
 import iwt3 from '../../assets/images/imageWithText/img-3.png'
 
 // retranca
@@ -54,39 +57,22 @@ const Home = () => {
             </Section>
             <Section bg={bgWall} bgMask={bgMaskPurple} id="google-workspace" >
                 <Container>
-
+                    <TabView />
                 </Container>
             </Section>
-            <Section bg={bg3} id="vivo-empresas">
+            <Section bg={bgWall} id="vivo-empresas" lineBG='#bd4aff'>
                 <Container>
-                    <ImageWithText imgSource={iwt2} reverse={true} >
-                        <div className="vivo-empresas">
-                            <h4>Vivo</h4>
-                            <h4><span>Empresas</span></h4>
-
-                            <p>
-                                Expandindo o objetivo da Telefônica em tornar-se um provedor d ud, em 2021 a empresa fechou 
-                                parceria com o Google para a revenda de serviços de&nbsp;nuvem.
-                            </p>
-                            <p>
-                                Com o propósito de oferecer uma base eficaz para empresas, administração pública e diversos 
-                                outros tipos de organizações, a colaboração promove o aceleramento da transformação 
-                                digital e fortalece a corporação atendida para o futuro, encontrando novas formas 
-                                de inovar e&nbsp;prosperar.
-                            </p>
-                        </div>
-                    </ImageWithText>
+                    <Carrousel />
                 </Container>
             </Section>
-            <Section bg={bg4} id="what-is-workspace">
+            <Section bg={bgAsian} id="what-is-workspace" lineBG='#bd4aff' bgOrientation='center top'>
                 <Container>
-                    <WhatIsWorkspace />
-                    <HorizontalAccordion />
+                    <VerticalAccordion />
                 </Container>
             </Section>
-            <Section bg={bg5} id="larger-carrousel">
+            <Section bg={bgWall} id="larger-carrousel">
                 <Container>
-                    <LargerCarrousel />
+                    Circular Carrousel
                 </Container>
             </Section>
             <Section bg={bg6} id="vertical-accordion">

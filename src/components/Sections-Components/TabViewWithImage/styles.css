@@ -1,4 +1,4 @@
-.tab-view {
+.tab-view-with-image {
     width: 100%;
     display: flex;
     align-items: center;
@@ -8,7 +8,7 @@
     z-index: 1;
 }
 
-.tab-view .tab-icons {
+.tab-view-with-image .tab-icons {
     display: flex;
     flex-wrap: wrap;
     column-gap: 1rem;
@@ -17,7 +17,7 @@
     z-index: 1;
 }
 
-.tab-view .tab-icons .icon {
+.tab-view-with-image .tab-icons .icon {
     width: 5rem;
     height: 5rem;
     background: #fff;
@@ -29,20 +29,20 @@
     transition: ease-out .5s;
 }
 
-.tab-view .tab-icons .icon:hover {
+.tab-view-with-image .tab-icons .icon:hover {
     background-color: #eeeeee;
 }
 
-.tab-view .tab-icons .icon:hover svg {
+.tab-view-with-image .tab-icons .icon:hover svg {
     transform: scale(1);
 }
 
-.tab-view .tab-icons .icon.active {
+.tab-view-with-image .tab-icons .icon.active {
     background-color: #461E5D;
 }
 
-.tab-view .tab-icons .icon::after,
-.tab-view .content::after {
+.tab-view-with-image .tab-icons .icon::after,
+.tab-view-with-image .content::after {
     content: '';
     background-color: #7d05a4;
     position: absolute;
@@ -53,25 +53,25 @@
     z-index: -1;
 }
 
-.tab-view .tab-icons .icon svg {
+.tab-view-with-image .tab-icons .icon svg {
     width: 100%;
     transition: ease-out .5s;
     transform: scale(.9);
 }
 
-.tab-view .tab-icons .icon.active svg {
+.tab-view-with-image .tab-icons .icon.active svg {
     transform: scale(1);
 }
 
-.tab-view .tab-icons .icon svg path {
+.tab-view-with-image .tab-icons .icon svg path {
     fill: #F44881;
 }
 
-.tab-view .tab-icons .icon.active svg path {
+.tab-view-with-image .tab-icons .icon.active svg path {
     fill: #fff;
 }
 
-.tab-view .content {
+.tab-view-with-image .content {
     position: relative;
     background-color: #fff;
     color: #461E5D;
@@ -84,44 +84,44 @@
     transition: all ease-out .5s;
 }
 
-.tab-view .content svg {
+.tab-view-with-image .content svg {
     width: 10rem;
 }
 
-.tab-view .content svg path {
+.tab-view-with-image .content svg path {
     fill: #461E5D; 
 }
 
-.tab-view .content .text-area {
+.tab-view-with-image .content .text-area {
     flex: 1;
 }
 
-.tab-view .content .text-area p {
+.tab-view-with-image .content .text-area p {
     font-size: 1.4rem;
 }
 
-.tab-view .content .text-area p:not(:last-child) {
+.tab-view-with-image .content .text-area p:not(:last-child) {
     margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-    .tab-view {
+    .tab-view-with-image {
         flex-direction: column;
         row-gap: 1.5rem;
     }
 
-    .tab-view .tab-icons {
+    .tab-view-with-image .tab-icons {
         width: 100%;
         justify-content: center;
     }
 
-    .tab-view .tab-icons .icon {
+    .tab-view-with-image .tab-icons .icon {
         --size: 4.5rem;
         width: var(--size);
         height: var(--size);
     }
 
-    .tab-view .content {
+    .tab-view-with-image .content {
         flex-direction: column;
         row-gap: 1rem;
     }

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import './styles.css';
 
-import image from '../../../assets/images/verticalAccordion/img.png'
-
 import { data } from "../../../data/VerticalAccordion";
 
 const VerticalAccordion = () => {
@@ -28,7 +26,6 @@ const VerticalAccordion = () => {
                     </div>
                 )) }
             </div>
-            <img src={image} alt="" />
         </div>
     )
 }

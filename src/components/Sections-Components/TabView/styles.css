@@ -1,0 +1,54 @@
+.tab-view {
+    position: relative;
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.tab-view .line-area {
+    position: relative;
+    height: 25rem;
+    margin-right: 3rem;
+    padding-left: 2rem;
+}
+
+.tab-view .line-area .line {
+    background-color: #fff;
+    position: absolute;
+    width: .4rem;
+    height: 100%;
+    left: 0;
+    border-radius: 1rem;
+}
+
+.tab-view .line-area ul {
+    height: 100%;
+    margin: auto 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+    gap: 2rem;
+}
+
+.tab-view .line-area ul li {
+    cursor: pointer;
+}
+
+.tab-view .content {
+    text-align: center;
+}
+
+.tab-view .content h4 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.tab-view .content p {
+    font-size: 1.6rem;
+}

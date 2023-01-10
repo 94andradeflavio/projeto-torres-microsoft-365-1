@@ -8,7 +8,6 @@ const object = []
 data.forEach((data, index) => object.push( { id: index, display: false }))
 
 const HorizontalAccordion = () => {
-    // eslint-disable-next-line
     const [accordion, setAccordion] = useState(object)
 
     const onClick = (index) => {
