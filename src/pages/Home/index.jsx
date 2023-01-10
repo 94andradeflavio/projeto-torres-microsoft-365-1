@@ -24,7 +24,7 @@ import bg1 from '../../assets/images/bg-1.png'
 // import bg5 from '../../assets/images/bg-5.png'
 import bg6 from '../../assets/images/bg-6.png'
 import bg7 from '../../assets/images/bg-7.png'
-import bg8 from '../../assets/images/bg-8.png'
+// import bg8 from '../../assets/images/bg-8.png'
 
 import bgWall from '../../assets/images/bg-wall.png'
 import bgMaskPurple from '../../assets/images/bg-mask-purple.png'
@@ -40,7 +40,7 @@ import iwt3 from '../../assets/images/imageWithText/img-3.png'
 import retrancaImg from '../../assets/images/logo/retranca.png'
 
 // assinatura (final)
-import sign from '../../assets/images/sign.png'
+import sign from '../../assets/images/logo/logo.png'
 
 // video import
 import video from '../../assets/videos/example.mp4'
@@ -97,7 +97,7 @@ const Home = () => {
                     </ImageWithText>
                 </Container>
             </Section>
-            <Section bg={bg8}>
+            <Section bg={bgWall}>
                 <Container>
                     <div className="sign-area">
                         <img src={ sign } alt="" />
