@@ -3,6 +3,7 @@ img.retranca {
     width: 15rem;
     left: 0;
     top: 2rem;
+    z-index: 10;
 }
 
 .sign-area {

@@ -20,12 +20,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #461E5D;
+  background: #fff;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #F44881;
+  background: #FE9901;
   border-radius: 1rem;
 }
 
