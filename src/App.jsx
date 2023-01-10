@@ -20,16 +20,18 @@ function App() {
     (async function() {
       await scorm.init()
     })()
+
+    scorm.setScore('100')
   }, [scorm])
 
   return (
-        <div className="App">
-          <Navbar />
-          <Routes>
-            <Route path='*' element={<Home />} />
-          </Routes>
-        </div>
-  );
+    <div className="App">
+      <Navbar />
+      <Routes>
+        <Route path='*' element={<Home />} />
+      </Routes>
+    </div>
+  )
 }
 
 export default App;

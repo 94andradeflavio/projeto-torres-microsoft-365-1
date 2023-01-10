@@ -33,3 +33,35 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #c03664;
 }
+
+button.btn {
+  padding: .3rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: .4rem;
+  color: #fff;
+  background: none;
+  border: 2px solid #ff9305;
+  box-shadow: 0px 0px 4px 1px #fff;
+  font-size: inherit;
+  position: relative;
+}
+
+/* button.btn:after {
+  --size: 2rem;
+
+  content: '';
+  position: absolute;
+  background-image: url('./assets/images/hand.png');
+  background-size: cover;
+  width: var(--size);
+  height: var(--size);
+  top: 50%;
+  right: calc((var(--size) * -1) - .4rem);
+  transform: translateY(-50%);
+} */
+
+@media screen and (max-width: 768px) {
+  button.btn {
+    font-size: .9rem;
+  }
+}

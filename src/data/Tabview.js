@@ -1,67 +1,69 @@
-import icon1 from '../assets/images/bloco-6/tab-view/icon-1.svg';
-import icon2 from '../assets/images/bloco-6/tab-view/icon-2.svg';
-import icon3 from '../assets/images/bloco-6/tab-view/icon-3.svg';
-import icon4 from '../assets/images/bloco-6/tab-view/icon-4.svg';
-import icon5 from '../assets/images/bloco-6/tab-view/icon-5.svg';
-import icon6 from '../assets/images/bloco-6/tab-view/icon-6.svg';
-import icon7 from '../assets/images/bloco-6/tab-view/icon-7.svg';
-import icon8 from '../assets/images/bloco-6/tab-view/icon-8.svg';
+import React from 'react';
+
+import { ReactComponent as Icon1 } from '../assets/images/tabView/icon-1.svg';
+import { ReactComponent as Icon2 } from '../assets/images/tabView/icon-2.svg';
+import { ReactComponent as Icon3 } from '../assets/images/tabView/icon-3.svg';
+import { ReactComponent as Icon4 } from '../assets/images/tabView/icon-4.svg';
+import { ReactComponent as Icon5 } from '../assets/images/tabView/icon-5.svg';
+import { ReactComponent as Icon6 } from '../assets/images/tabView/icon-6.svg';
+import { ReactComponent as Icon7 } from '../assets/images/tabView/icon-7.svg';
+import { ReactComponent as Icon8 } from '../assets/images/tabView/icon-8.svg';
 
 export const data = [
     {
-        icon: icon1,
+        icon: <Icon1 />,
         description: [
-            'Título 1',
-            'Descrição'
+            'Text 1',
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam culpa quae facere, qui, quas quidem, vel repellendus aperiam obcaecati facilis amet sed ratione omnis sequi dolor nisi. Libero, culpa repellat.'
         ]
     },
     {
-        icon: icon2,
+        icon: <Icon2 />,
         description: [
-            'Título 2',
-            'Descrição'
+            'Text 2',
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam culpa quae facere, qui, quas quidem, vel repellendus aperiam obcaecati facilis amet sed ratione omnis sequi dolor nisi. Libero, culpa repellat.'
         ]
     },
     {
-        icon: icon3,
+        icon: <Icon3 />,
         description: [
-            'Título 3',
-            'Descrição'
+            'Text 3',
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam culpa quae facere, qui, quas quidem, vel repellendus aperiam obcaecati facilis amet sed ratione omnis sequi dolor nisi. Libero, culpa repellat.'
         ]
     },
     {
-        icon: icon4,
+        icon: <Icon4 />,
         description: [
-            'Título 4',
-            'Descrição'
+            'Text 4',
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam culpa quae facere, qui, quas quidem, vel repellendus aperiam obcaecati facilis amet sed ratione omnis sequi dolor nisi. Libero, culpa repellat.'
         ]
     },
     {
-        icon: icon5,
+        icon: <Icon5 />,
         description: [
-            'Título 5',
-            'Descrição'
+            'Text 5',
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam culpa quae facere, qui, quas quidem, vel repellendus aperiam obcaecati facilis amet sed ratione omnis sequi dolor nisi. Libero, culpa repellat.'
         ]
     },
     {
-        icon: icon6,
+        icon: <Icon6 />,
         description: [
-            'Título 6',
-            'Descrição'
+            'Text 6',
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam culpa quae facere, qui, quas quidem, vel repellendus aperiam obcaecati facilis amet sed ratione omnis sequi dolor nisi. Libero, culpa repellat.'
         ]
     },
     {
-        icon: icon7,
+        icon: <Icon7 />,
         description: [
-            'Título 7',
-            'Descrição'
+            'Text 7',
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam culpa quae facere, qui, quas quidem, vel repellendus aperiam obcaecati facilis amet sed ratione omnis sequi dolor nisi. Libero, culpa repellat.'
         ]
     },
     {
-        icon: icon8,
+        icon: <Icon8 />,
         description: [
-            'Título 8',
-            'Descrição'
+            'Text 8',
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam culpa quae facere, qui, quas quidem, vel repellendus aperiam obcaecati facilis amet sed ratione omnis sequi dolor nisi. Libero, culpa repellat.'
         ]
     },
 ]

@@ -16,13 +16,12 @@ const TabView = () => {
             <div className="tab-icons">
                 { data.map((item, index) => (
                     <div className={ `icon ${ index === indexItem ? 'active' : '' }` } key={index} onClick={_ => chooseItem(index)}>
-                        <img src={item.icon} alt="" />
-                        <svg></svg>
+                        {item.icon}
                     </div>
                 )) }
             </div>
             <div className="content">
-                <img src={data[indexItem].icon} alt="" />
+                {data[indexItem].icon}
                 <div className="text-area">
                     { data[indexItem].description.map((item, index) => (
                         <p key={index}>{item}</p>

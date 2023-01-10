@@ -29,23 +29,12 @@
     flex-direction: row-reverse;
 }
 
-.image-with-text button {
-    padding: .3rem 1rem;
-    margin-top: 1rem;
-    margin-bottom: .4rem;
-    color: #fff;
-    background: none;
-    border: 2px solid #ff9305;
-    box-shadow: 0px 0px 4px 1px #fff;
-    cursor: pointer;
-    font-size: inherit;
-}
-
 .image-with-text .vivo-empresas {
     padding-right: 2.5rem;
 }
 
 .image-with-text .vivo-empresas h4 {
+    font-family: officina-bold;
     font-size: 2.5rem;
     line-height: 1;
 }
@@ -57,4 +46,24 @@
 .image-with-text .vivo-empresas h4 span {
     color: #7d05a4;
     margin-left: 2rem;
+}
+
+.image-with-text .vivo-empresas h4 + p {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .image-with-text,
+    .image-with-text.reverse {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .image-with-text.end {
+        align-items: center;
+    }
+
+    .image-with-text img {
+        width: 80%;
+    }
 }

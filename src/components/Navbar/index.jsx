@@ -1,10 +1,50 @@
 import React, { useState } from 'react';
+import Scroll, { Link, Events } from 'react-scroll';
+
 import './styles.css';
 
 const Navbar = () => {
     const [burgerClass, setBurgerClass] = useState('burger-bar unclicked')
     const [menuClass, setMenuClass] = useState('menu hidden')
     const [menuClicked, setMenuClicked] = useState(false)
+
+    const links = [
+        {
+            name: 'Início',
+            to: 'start',
+            functions: () => updateMenu()
+        },
+        {
+            name: 'Google Workspace',
+            to: 'google-workspace',
+            functions: () => updateMenu()
+        },
+        {
+            name: 'Vivo Empresas',
+            to: 'vivo-empresas',
+            functions: () => updateMenu()
+        },
+        {
+            name: 'O que é Workspace',
+            to: 'what-is-workspace',
+            functions: () => updateMenu()
+        },
+        {
+            name: 'Larger Carrousel',
+            to: 'larger-carrousel',
+            functions: () => updateMenu()
+        },
+        {
+            name: 'Vertical Accordion',
+            to: 'vertical-accordion',
+            functions: () => updateMenu()
+        },
+        {
+            name: 'Image with text',
+            to: 'image-with-text',
+            functions: () => updateMenu()
+        },
+    ]
 
     const updateMenu = () => {
         if(!menuClicked) {
@@ -15,6 +55,15 @@ const Navbar = () => {
             setMenuClass('menu hidden')
         }
         setMenuClicked(!menuClicked)
+        scrollMore()
+    }
+
+    const scrollMore = () => {
+        Events.scrollEvent.register('end', () => {
+            const scroll = Scroll.animateScroll
+            scroll.scrollMore(1)
+            Events.scrollEvent.remove('end')
+        })
     }
 
     return (
@@ -28,13 +77,22 @@ const Navbar = () => {
             </nav>
             <div className={menuClass}>
                 <ul>
-                    <li><span>Início</span></li>
-                    <li><span>Item 2</span></li>
-                    <li><span>Item 3</span></li>
-                    <li><span>Item 4</span></li>
-                    <li><span>Item 5</span></li>
-                    <li><span>Item 6</span></li>
-                    <li><span>Item 7</span></li>
+                    { links.map(link => {
+                        return (
+                            <li key={link.name}>
+                                <Link 
+                                    onClick={link.functions}
+                                    activeClass="active" 
+                                    to={ link.to } spy={true} 
+                                    isDynamic={true} 
+                                    smooth={true} 
+                                    offset={0} 
+                                    duration={500}>
+                                    { link.name }
+                                </Link>
+                            </li>
+                        )
+                    }) }
                 </ul>
             </div>
         </div>

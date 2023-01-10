@@ -15,7 +15,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    mix-blend-mode: color-dodge;
+    z-index: -1;
 }
 
 .saiba-mais::before {
@@ -29,6 +29,7 @@
 }
 
 .saiba-mais h4 {
+    font-family: officina-bold;
     color: #7d05a4;
     font-size: 2rem;
     line-height: 1;
@@ -48,15 +49,25 @@
     background-color: #fff;
     color: #461E5D;
     position: absolute;
-    bottom: 0;
     left: 50%;
     transform: translate(-50%, 50%);
+    bottom: 0;
     letter-spacing: .1rem;
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 700;
     padding: .2rem 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
     border: none;
+    font-family: officina-extra;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.saiba-mais button:hover {
+    background-color: #461E5D;
+    color: #fff;
 }
 
 .saiba-mais button:after {
@@ -69,4 +80,74 @@
     top: .4rem;
     left: -.4rem;
     mix-blend-mode: color;
+    transition: .2s linear;
+}
+
+.saiba-mais button:hover::after {
+    border: .2rem solid #461E5D;
+}
+
+.modal-overlay {
+    background-color: rgba(0,0,0,.5);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #fff;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 10px;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content h2 {
+    font-family: officina-bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.modal-content button.close {
+    background-color: #fff;
+    color: #ff9305;
+    border: 2px solid #ff9305;
+    border-radius: 2rem;
+    font-family: officina-extra;
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.modal-content button.close:hover {
+    color: #fff;
+    background-color: #ff9305;
+}
+
+@media screen and (max-width: 768px) {
+    .saiba-mais {
+        padding: 1rem;
+        padding-bottom: 2rem;
+    }
+    .saiba-mais button {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+    }
 }

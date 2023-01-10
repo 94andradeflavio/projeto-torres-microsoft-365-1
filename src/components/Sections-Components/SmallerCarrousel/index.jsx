@@ -5,10 +5,10 @@ import './styles.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import image1 from '../../../assets/images/bloco-2/carrousel/icon-1.png'
+import image1 from '../../../assets/images/carrousel/smallerCarrousel/icon-1.png'
 
-import arrowPrev from '../../../assets/images/bloco-2/carrousel/arrow-left.png'
-import arrowNext from '../../../assets/images/bloco-2/carrousel/arrow-right.png'
+import arrowPrev from '../../../assets/images/carrousel/arrow-left.png'
+import arrowNext from '../../../assets/images/carrousel/arrow-right.png'
 
 const SmallerCarrousel = () => {
     const slider = useRef(null)
@@ -20,6 +20,7 @@ const SmallerCarrousel = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        fade: true,
     };
     
     const prev = () => {
@@ -47,19 +48,43 @@ const SmallerCarrousel = () => {
                     </div>
                 </div>
                 <div className="item">
-                    <h3>2</h3>
+                    <div className="flex-area">
+                        <img src={image1} alt="" />
+                        <div>
+                            <h4>safasfdasf</h4>
+                            <ul>
+                                <li>Proteger a empresa contra ameaças</li>
+                                <li>Reduzir a vulnerabilidade digital</li>
+                                <li>Preservar o sistema do negócio com eficácia</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div className="item">
-                    <h3>3</h3>
+                    <div className="flex-area">
+                        <img src={image1} alt="" />
+                        <div>
+                            <h4>fffffffffff</h4>
+                            <ul>
+                                <li>Proteger a empresa contra ameaças</li>
+                                <li>Reduzir a vulnerabilidade digital</li>
+                                <li>Preservar o sistema do negócio com eficácia</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div className="item">
-                    <h3>4</h3>
-                </div>
-                <div className="item">
-                    <h3>5</h3>
-                </div>
-                <div className="item">
-                    <h3>6</h3>
+                    <div className="flex-area">
+                        <img src={image1} alt="" />
+                        <div>
+                            <h4>ffffassasddf</h4>
+                            <ul>
+                                <li>Proteger a empresa contra ameaças</li>
+                                <li>Reduzir a vulnerabilidade digital</li>
+                                <li>Preservar o sistema do negócio com eficácia</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </Slider>
             <div className="controls">

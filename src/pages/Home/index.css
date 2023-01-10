@@ -1,0 +1,17 @@
+img.retranca {
+    position: absolute;
+    width: 15rem;
+    left: 0;
+    top: 2rem;
+}
+
+.sign-area {
+    width: 100%;
+    display: flex;
+}
+
+.sign-area img {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+}

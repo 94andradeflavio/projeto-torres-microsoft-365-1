@@ -26,6 +26,15 @@
     align-items: center;
     cursor: pointer;
     position: relative;
+    transition: ease-out .5s;
+}
+
+.tab-view .tab-icons .icon:hover {
+    background-color: #eeeeee;
+}
+
+.tab-view .tab-icons .icon:hover svg {
+    transform: scale(1);
 }
 
 .tab-view .tab-icons .icon.active {
@@ -44,9 +53,22 @@
     z-index: -1;
 }
 
-.tab-view .tab-icons .icon img {
+.tab-view .tab-icons .icon svg {
     width: 100%;
-    border: 1px solid black;
+    transition: ease-out .5s;
+    transform: scale(.9);
+}
+
+.tab-view .tab-icons .icon.active svg {
+    transform: scale(1);
+}
+
+.tab-view .tab-icons .icon svg path {
+    fill: #F44881;
+}
+
+.tab-view .tab-icons .icon.active svg path {
+    fill: #fff;
 }
 
 .tab-view .content {
@@ -62,9 +84,16 @@
     transition: all ease-out .5s;
 }
 
-.tab-view .content img {
+.tab-view .content svg {
     width: 10rem;
-    border: 1px solid black;
+}
+
+.tab-view .content svg path {
+    fill: #461E5D; 
+}
+
+.tab-view .content .text-area {
+    flex: 1;
 }
 
 .tab-view .content .text-area p {
@@ -73,4 +102,27 @@
 
 .tab-view .content .text-area p:not(:last-child) {
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .tab-view {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .tab-view .tab-icons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tab-view .tab-icons .icon {
+        --size: 4.5rem;
+        width: var(--size);
+        height: var(--size);
+    }
+
+    .tab-view .content {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
 }

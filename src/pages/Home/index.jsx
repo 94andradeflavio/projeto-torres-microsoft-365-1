@@ -17,27 +17,42 @@ import SaibaMais from '../../components/Sections-Components/SaibaMais';
 import TabView from '../../components/Sections-Components/TabView';
 
 // Backgrounds
-import bg1 from '../../assets/images/bloco-1/bg.jpg'
-import bg2 from '../../assets/images/bloco-2/bg.jpg'
-import bg3 from '../../assets/images/bloco-3/bg.jpg'
-import bg4 from '../../assets/images/bloco-4/bg.jpg'
-import bg5 from '../../assets/images/bloco-5/bg.jpg'
-import bg6 from '../../assets/images/bloco-6/bg.jpg'
+import bg1 from '../../assets/images/bg-1.png'
+import bg2 from '../../assets/images/bg-2.png'
+import bg3 from '../../assets/images/bg-3.png'
+import bg4 from '../../assets/images/bg-4.png'
+import bg5 from '../../assets/images/bg-5.png'
+import bg6 from '../../assets/images/bg-6.png'
+import bg7 from '../../assets/images/bg-7.png'
+import bg8 from '../../assets/images/bg-8.png'
 
 // Images
-import iwt1 from '../../assets/images/bloco-2/img.png'
-import iwt2 from '../../assets/images/bloco-3/logo.png'
+
+// Image With Text
+import iwt1 from '../../assets/images/imageWithText/img-1.png'
+import iwt2 from '../../assets/images/imageWithText/img-2.png'
+import iwt3 from '../../assets/images/imageWithText/img-3.png'
+
+// retranca
+import retrancaImg from '../../assets/images/logo/retranca.png'
+
+// assinatura (final)
+import sign from '../../assets/images/sign.png'
+
+// video import
+import video from '../../assets/videos/example.mp4'
 
 const Home = () => {
 
     return (
         <>
-            <Section bg={bg1}>
+            <img src={retrancaImg} alt="" className="retranca" />
+            <Section bg={bg1} id="start">
                 <Container>
                     <Logo />
                 </Container>
             </Section>
-            <Section bg={bg2}>
+            <Section bg={bg2} id="google-workspace">
                 <Container>
                     <TitleSubtitle
                         title="Google Workspace"
@@ -48,12 +63,12 @@ const Home = () => {
                             estar preparada para lidar com os desafios que se conectam ao mercado, aos consumidores 
                             e ao seu&nbsp;desenvolvimento.
                         </p>
-                        <button>Clique nos botões para ver alguns exemplos:</button>
+                        <button className='btn'>Clique nos botões para ver alguns exemplos:</button>
                     </ImageWithText>
                     <SmallerCarrousel />
                 </Container>
             </Section>
-            <Section bg={bg3}>
+            <Section bg={bg3} id="vivo-empresas">
                 <Container>
                     <ImageWithText imgSource={iwt2} reverse={true} >
                         <div className="vivo-empresas">
@@ -74,23 +89,44 @@ const Home = () => {
                     </ImageWithText>
                 </Container>
             </Section>
-            <Section bg={bg4}>
+            <Section bg={bg4} id="what-is-workspace">
                 <Container>
                     <WhatIsWorkspace />
                     <HorizontalAccordion />
                 </Container>
             </Section>
-            <Section bg={bg5}>
+            <Section bg={bg5} id="larger-carrousel">
                 <Container>
                     <LargerCarrousel />
                 </Container>
             </Section>
-            <Section bg={bg6}>
+            <Section bg={bg6} id="vertical-accordion">
                 <Container>
                     <VerticalAccordion />
-                    <Video source="#" />
+                    <Video source={ video } title="Título do vídeo" />
                     <SaibaMais />
                     <TabView />
+                </Container>
+            </Section>
+            <Section bg={bg7} id="image-with-text">
+                <Container>
+                    <ImageWithText imgSource={iwt3} 
+                    style={{
+                        maxWidth: '25rem',
+                        marginTop: '-5rem'
+                    }}>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quae dolor mollitia veritatis excepturi nam consequuntur eum, 
+                            illum, saepe neque et id tempora officiis quidem! Aliquid similique ut voluptate&nbsp;modi.
+                        </p>
+                    </ImageWithText>
+                </Container>
+            </Section>
+            <Section bg={bg8}>
+                <Container>
+                    <div className="sign-area">
+                        <img src={ sign } alt="" />
+                    </div>
                 </Container>
             </Section>
         </>

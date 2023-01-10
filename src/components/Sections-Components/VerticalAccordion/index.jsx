@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './styles.css';
 
-import image from '../../../assets/images/bloco-5/carrousel/img1.png'
+import image from '../../../assets/images/verticalAccordion/img.png'
 
 import { data } from "../../../data/VerticalAccordion";
 

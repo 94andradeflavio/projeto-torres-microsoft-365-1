@@ -5,12 +5,13 @@ import './styles.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import carrouselBackground from '../../../assets/images/bloco-5/carrousel/bg.png'
+import carrouselBackground from '../../../assets/images/carrousel/largerCarrousel/bg.png'
+import carrouselBackgroundMobile from '../../../assets/images/carrousel/largerCarrousel/bg_mobile.png'
 
-import image1 from '../../../assets/images/bloco-5/carrousel/img1.png'
+import image1 from '../../../assets/images/carrousel/largerCarrousel/img1.png'
 
-import arrowPrev from '../../../assets/images/bloco-2/carrousel/arrow-left.png'
-import arrowNext from '../../../assets/images/bloco-2/carrousel/arrow-right.png'
+import arrowPrev from '../../../assets/images/carrousel/arrow-left.png'
+import arrowNext from '../../../assets/images/carrousel/arrow-right.png'
 
 const LargerCarrousel = () => {
     const slider = useRef(null)
@@ -34,7 +35,8 @@ const LargerCarrousel = () => {
 
     return (
         <div className="larger-carrousel">
-            <img src={carrouselBackground} alt="" />
+            <img src={carrouselBackground} className="bg" alt="" />
+            <img src={carrouselBackgroundMobile} className="bg-m" alt="" />
             <Slider {...settings} ref={slider}>
                 <div className="item">
                     <div className="flex-area">
