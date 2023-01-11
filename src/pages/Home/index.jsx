@@ -11,11 +11,12 @@ import ImageWithText from '../../components/Sections-Components/ImageWithText';
 // import HorizontalAccordion from '../../components/Sections-Components/HorizontalAccordion';
 // import LargerCarrousel from '../../components/Sections-Components/LargerCarrousel';
 import CircularCarrousel from '../../components/Sections-Components/CircularCarrousel';
-import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
-import Video from '../../components/Sections-Components/Video';
 import SaibaMais from '../../components/Sections-Components/SaibaMais';
+import ShowDownSlider from '../../components/Sections-Components/ShowDownSlider';
 import TabView from '../../components/Sections-Components/TabView';
 import TabViewWithImage from '../../components/Sections-Components/TabViewWithImage';
+import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
+import Video from '../../components/Sections-Components/Video';
 
 // Backgrounds
 import bg1 from '../../assets/images/bg-1.png'
@@ -74,6 +75,11 @@ const Home = () => {
             <Section bg={bgWall} id="larger-carrousel">
                 <Container>
                     <CircularCarrousel />
+                </Container>
+            </Section>
+            <Section bg={ bgWall } lineBG="#83d300" >
+                <Container>
+                    <ShowDownSlider />
                 </Container>
             </Section>
             <Section bg={bg6} id="vertical-accordion">
