@@ -10,6 +10,7 @@ import ImageWithText from '../../components/Sections-Components/ImageWithText';
 // import WhatIsWorkspace from '../../components/Sections-Components/WhatIsWorkspace';
 // import HorizontalAccordion from '../../components/Sections-Components/HorizontalAccordion';
 // import LargerCarrousel from '../../components/Sections-Components/LargerCarrousel';
+import CircularCarrousel from '../../components/Sections-Components/CircularCarrousel';
 import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
 import Video from '../../components/Sections-Components/Video';
 import SaibaMais from '../../components/Sections-Components/SaibaMais';
@@ -72,7 +73,7 @@ const Home = () => {
             </Section>
             <Section bg={bgWall} id="larger-carrousel">
                 <Container>
-                    Circular Carrousel
+                    <CircularCarrousel />
                 </Container>
             </Section>
             <Section bg={bg6} id="vertical-accordion">

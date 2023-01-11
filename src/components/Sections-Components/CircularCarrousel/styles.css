@@ -1,0 +1,133 @@
+.circular-carrousel {
+    --slider-width: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.circular-carrousel .content {
+    position: relative;
+    margin: -10rem 0;
+    margin-left: calc(var(--slider-width) / 1.35 * -1);
+}
+
+.circular-carrousel .content .wrapper {
+    background-image: url("../../../assets/images/carrousel/circularCarrousel/circle.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: var(--slider-width);
+    margin: -18rem 0;
+    z-index: 1;
+}
+
+.circular-carrousel .content .wrapper .item {
+    --size: 12rem;
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    background: #b3d682;
+    border: .5rem solid #b3d682;
+    padding: 1rem;
+}
+
+.circular-carrousel .content .wrapper .item svg {
+    width: 7rem;
+}
+
+.circular-carrousel .content .wrapper .item.active {
+    background: #fff;
+    border-color: #eb3c7d;
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+.circular-carrousel .content .wrapper svg {
+    height: 90%;
+    width: 90%;
+    overflow: visible;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circular-carrousel .content .wrapper svg .st0 {
+    fill: none;
+    stroke-width: 2;
+    stroke-miterlimit: 1;
+}
+
+.circular-carrousel .text-area {
+    color: #370054;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    margin-left: 4rem;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.circular-carrousel .text-area h4 {
+    position: absolute;
+    font-size: 3rem;
+    color: #FF9C05;
+    font-weight: 500;
+    top: -12rem;
+}
+
+.circular-carrousel .text-area h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #eb3c7d;
+}
+
+.circular-carrousel .text-area .controls {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.circular-carrousel .text-area .controls p {
+    font-size: 1.5rem;
+}
+
+.circular-carrousel .text-area .controls p span {
+    color: #FF9C05;
+}
+
+.circular-carrousel .text-area .text-item {
+    width: 100%;
+    padding-right: 4rem;
+    text-align: left;
+}
+
+.circular-carrousel .text-area .text-item p:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.circular-carrousel .text-area button {
+    font-size: 3rem;
+    transform: scale(0.8);
+    color: #FF9C05;
+    font-weight: 900;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s linear;
+}
+
+.circular-carrousel .text-area button:hover {
+    transform: scale(1);
+}

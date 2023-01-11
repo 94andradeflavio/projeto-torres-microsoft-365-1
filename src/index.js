@@ -16,4 +16,9 @@ root.render(
       </ScormProvider>
     </BrowserRouter>
   </React.StrictMode>
+  // <BrowserRouter>
+  //   <ScormProvider>
+  //     <App />
+  //   </ScormProvider>
+  // </BrowserRouter>
 );
