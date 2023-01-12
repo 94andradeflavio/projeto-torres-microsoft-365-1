@@ -10,8 +10,6 @@ import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
 
-import videoImage from '../../../assets/images/video.png'
-
 const getMinutesFromSeconds = totalTime => {
     const minutes = parseInt(totalTime / 60)
     const seconds = Math.floor(totalTime % 60)
@@ -60,7 +58,6 @@ const Video = ({source, title}) => {
 
     return (
         <div className="video">
-            <img src={ videoImage } alt="" />
             <div 
                 className={`video-wrapper ${!isPlaying ? 'paused' : 'playing'}`} 
                 ref={videoWrapperRef}

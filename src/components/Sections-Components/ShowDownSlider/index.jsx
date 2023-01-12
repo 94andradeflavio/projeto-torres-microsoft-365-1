@@ -23,7 +23,11 @@ const data = [
             'fasdfasdfasdf',
             'fjalsdfkjasdfiojasojsf',
             'fjaosjdfçlaknvlkzxncvasdfsajdflçkj',
-            'sjfpokjzxvkjkçljas'
+            'sjfpokjzxvkjkçljas',
+            'fasdfasdfasdf',
+            'fjalsdfkjasdfiojasojsf',
+            'fjaosjdfçlaknvlkzxncvasdfsajdflçkj',
+            'sjfpokjzxvkjkçljas',
         ]
     },
     {
@@ -53,21 +57,25 @@ const ShowDownSlider = () => {
 
     return (
         <div className="show-down-slider">
-            { data.map((item, index) => (
-                <div className={`slider ${ showDown[index].display ? 'show' : '' }`}
-                    value={index + 1} 
-                    key={index}>
-                    <img src={item.image} alt={item.title} onClick={ _ => onClick(index) } draggable="false" />
-                    <div className="content-wrapper">
-                        <div className="content">
-                            { item.texts.map((paragraph, i) => {
-                                return <p key={i}>{paragraph}</p>
-                            }) }
+            <h2>Conteúdo do slide</h2>
+            <p>Clique nos quadrinhos para obter mais informações sobre o conteúdo do slide.</p>
+            <div className="show-down-wrapper">
+                { data.map((item, index) => (
+                    <div className={`slider ${ showDown[index].display ? 'show' : '' }`}
+                        value={index + 1} 
+                        key={index}>
+                        <img src={item.image} alt={item.title} onClick={ _ => onClick(index) } draggable="false" />
+                        <div className="content-wrapper">
+                            <div className="content">
+                                { item.texts.map((paragraph, i) => {
+                                    return <p key={i}>{paragraph}</p>
+                                }) }
+                            </div>
+                            <div className="outer" style={{background: `linear-gradient(to ${item.orientation === 'left' ? 'right' : 'left'}, rgba(0,0,0,0) 0%, ${ item.color } 25%)`}}></div>
                         </div>
-                        <div className="outer" style={{background: `linear-gradient(to ${item.orientation === 'left' ? 'right' : 'left'}, rgba(0,0,0,0) 0%, ${ item.color } 25%)`}}></div>
                     </div>
-                </div>
-            )) }
+                )) }
+            </div>
         </div>
     )
 }

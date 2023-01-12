@@ -15,8 +15,9 @@ import SaibaMais from '../../components/Sections-Components/SaibaMais';
 import ShowDownSlider from '../../components/Sections-Components/ShowDownSlider';
 import TabView from '../../components/Sections-Components/TabView';
 import TabViewWithImage from '../../components/Sections-Components/TabViewWithImage';
+import Tooltip from '../../components/Sections-Components/Tooltip';
 import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
-import Video from '../../components/Sections-Components/Video';
+// import Video from '../../components/Sections-Components/Video';
 
 // Backgrounds
 import bg1 from '../../assets/images/bg-1.png'
@@ -29,6 +30,7 @@ import bg7 from '../../assets/images/bg-7.png'
 // import bg8 from '../../assets/images/bg-8.png'
 
 import bgWall from '../../assets/images/bg-wall.png'
+import bgMaskPurpleDiagonal from '../../assets/images/bg-mask-purple-diagonal.png'
 import bgMaskPurple from '../../assets/images/bg-mask-purple.png'
 import bgAsian from '../../assets/images/bg-asian.png'
 
@@ -44,9 +46,6 @@ import retrancaImg from '../../assets/images/logo/retranca.png'
 // assinatura (final)
 import sign from '../../assets/images/logo/logo.png'
 
-// video import
-import video from '../../assets/videos/example.mp4'
-
 const Home = () => {
 
     return (
@@ -57,7 +56,7 @@ const Home = () => {
                     <Logo />
                 </Container>
             </Section>
-            <Section bg={bgWall} bgMask={bgMaskPurple} id="google-workspace" >
+            <Section bg={bgWall} bgMask={ bgMaskPurpleDiagonal } id="google-workspace" >
                 <Container>
                     <TabView />
                 </Container>
@@ -82,10 +81,13 @@ const Home = () => {
                     <ShowDownSlider />
                 </Container>
             </Section>
+            <Section bg={ bgWall } bgMask={ bgMaskPurple } >
+                <Container>
+                    <Tooltip />
+                </Container>
+            </Section>
             <Section bg={bg6} id="vertical-accordion">
                 <Container>
-                    <VerticalAccordion />
-                    <Video source={ video } title="Título do vídeo" />
                     <SaibaMais />
                     <TabViewWithImage />
                 </Container>
