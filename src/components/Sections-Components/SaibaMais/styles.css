@@ -1,66 +1,41 @@
 .saiba-mais {
     width: 100%;
-    max-width: 45rem;
-    margin: 4rem auto;
+    max-width: 30rem;
+    margin: 4rem 0;
     padding: 2rem 3rem;
-    border: .2rem solid #fff;
     position: relative;
 }
 
-.saiba-mais::before, .saiba-mais::after {
-    content: '';
-    /* background-color: rgba(0,0,0,.2); */
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.saiba-mais::before {
-    box-shadow: inset 0px 0px 8px 1px #ff9305;
-}
-
-.saiba-mais::after {
-    /* border: .2rem solid transparent; */
-    box-shadow: 0px 0px 8px 3px #ff9305;
-    box-sizing: content-box;
-}
-
 .saiba-mais h4 {
-    font-family: officina-bold;
-    color: #7d05a4;
+    color: #ed3e81;
     font-size: 2rem;
     line-height: 1;
+    font-weight: 500;
 }
 
 .saiba-mais h4 span {
-    margin-left: 2rem;
-    color: #fff;
+    margin-left: -2rem;
+    color: #660099;
 }
 
 .saiba-mais p {
     margin-top: 2rem;
     font-size: 1.4rem;
+    color: #660099;
 }
 
 .saiba-mais button {
-    background-color: #fff;
-    color: #461E5D;
+    background-color: #660099;
+    color: #fff;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    bottom: 0;
     letter-spacing: .1rem;
     font-size: 1.4rem;
-    text-transform: uppercase;
     font-weight: 700;
-    padding: .2rem 1.5rem;
+    padding: .5rem 3rem;
     margin-top: 1.5rem;
     margin-bottom: 0rem;
     border: none;
-    font-family: officina-extra;
+    border-radius: .5rem;
     cursor: pointer;
     transition: .2s linear;
 }
@@ -68,23 +43,6 @@
 .saiba-mais button:hover {
     background-color: #461E5D;
     color: #fff;
-}
-
-.saiba-mais button:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: .2rem solid #fff;
-    box-sizing: border-box;
-    top: .4rem;
-    left: -.4rem;
-    mix-blend-mode: color;
-    transition: .2s linear;
-}
-
-.saiba-mais button:hover::after {
-    border: .2rem solid #461E5D;
 }
 
 .modal-overlay {
@@ -115,7 +73,6 @@
 }
 
 .modal-content h2 {
-    font-family: officina-bold;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
@@ -123,10 +80,9 @@
 
 .modal-content button.close {
     background-color: #fff;
-    color: #ff9305;
-    border: 2px solid #ff9305;
+    color: #660099;
+    border: 2px solid #660099;
     border-radius: 2rem;
-    font-family: officina-extra;
     font-size: 1.3rem;
     padding: .5rem 1rem;
     margin-top: 2rem;
@@ -136,7 +92,7 @@
 
 .modal-content button.close:hover {
     color: #fff;
-    background-color: #ff9305;
+    background-color: #660099;
 }
 
 @media screen and (max-width: 768px) {

@@ -13,19 +13,23 @@ const SaibaMais = () => {
     
     return (
         <div className="saiba-mais">
-            <h4>Ornare quiz</h4>
             <h4><span>isus proin</span></h4>
+            <h4>Lorem ipsum</h4>
 
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam culpa quae facere, qui, quas quidem, 
                 vel repellendus aperiam obcaecati facilis amet sed ratione omnis sequi dolor nisi. Libero, culpa 
                 repellat.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam culpa quae facere, qui, quas quidem, 
-                vel repellendus aperiam obcaecati facilis amet sed ratione omnis sequi dolor nisi. Libero, culpa 
-                repellat.
+            </p>
+            <p>
+                <b>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam culpa quae facere, qui, quas quidem, 
+                    vel repellendus aperiam obcaecati facilis amet sed ratione omnis sequi dolor nisi. Libero, culpa 
+                    repellat.
+                </b>
             </p>
 
-            <button type="button" onClick={openModal}><span>Saiba mais...</span></button>
+            <button type="button" onClick={openModal}><span>Saiba Mais</span></button>
             <Modal
                 isOpen={modal}
                 onRequestClose={closeModal}
