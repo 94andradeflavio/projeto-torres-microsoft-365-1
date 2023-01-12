@@ -15,6 +15,7 @@ import SaibaMais from '../../components/Sections-Components/SaibaMais';
 import ShowDownSlider from '../../components/Sections-Components/ShowDownSlider';
 import TabView from '../../components/Sections-Components/TabView';
 import TabViewWithImage from '../../components/Sections-Components/TabViewWithImage';
+import TimeLine from '../../components/Sections-Components/TimeLine';
 import Tooltip from '../../components/Sections-Components/Tooltip';
 import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
 // import Video from '../../components/Sections-Components/Video';
@@ -81,9 +82,15 @@ const Home = () => {
                     <ShowDownSlider />
                 </Container>
             </Section>
-            <Section bg={ bgWall } bgMask={ bgMaskPurple } >
+            <Section bg={ bgWall } bgMask={ bgMaskPurple } lineBG="#83d300" >
                 <Container>
                     <Tooltip />
+                    <TimeLine />
+                </Container>
+            </Section>
+            <Section bg={ bgWall }>
+                <Container>
+
                 </Container>
             </Section>
             <Section bg={bg6} id="vertical-accordion">
