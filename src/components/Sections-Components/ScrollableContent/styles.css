@@ -1,0 +1,27 @@
+.scrollable-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.scrollable-wrapper img {
+    width: 80%;
+    max-width: 30rem;
+}
+
+.scrollable-wrapper .content {
+    max-height: 20rem;
+    overflow-y: scroll;
+    padding-right: 1rem;
+}
+
+.scrollable-wrapper .content h3 {
+    font-size: 2.5rem;
+    color: #ff9900;
+    margin-bottom: 1rem;
+}
+
+.scrollable-wrapper .content p {
+    font-size: 1.5rem;
+}

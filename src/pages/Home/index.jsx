@@ -16,6 +16,7 @@ import SaibaMais from '../../components/Sections-Components/SaibaMais';
 import ShowDownSlider from '../../components/Sections-Components/ShowDownSlider';
 import TabView from '../../components/Sections-Components/TabView';
 // import TabViewWithImage from '../../components/Sections-Components/TabViewWithImage';
+import ScrollableContent from '../../components/Sections-Components/ScrollableContent';
 import TimeLine from '../../components/Sections-Components/TimeLine';
 import Tooltip from '../../components/Sections-Components/Tooltip';
 import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
@@ -98,7 +99,7 @@ const Home = () => {
             </Section>
             <Section bg={ bgWall } bgMask={ bgMaskPurple } lineBG="#83d300" mt="-7.5rem">
                 <Container>
-                    Conteúdo
+                    <ScrollableContent />
                 </Container>
             </Section>
             <Section bg={bgWall}>
