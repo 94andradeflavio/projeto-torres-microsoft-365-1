@@ -49,7 +49,6 @@ data.forEach((data, index) => object.push( { id: index, display: false }))
 
 const ShowDownSlider = () => {
     const [showDown, setShowDown] = useState(object)
-    console.log(showDown)
 
     const onClick = index => {
         setShowDown(showDown.map(item => item.id === index ? { ...item, display: !item.display } : { ...item }))

@@ -5,6 +5,7 @@ import './index.css'
 import Section from '../../components/Section';
 import Carrousel from '../../components/Sections-Components/Carrousel';
 import Container from '../../components/Container';
+import FlipCards from '../../components/Sections-Components/FlipCards';
 import Logo from '../../components/Sections-Components/Logo';
 import ImageWithText from '../../components/Sections-Components/ImageWithText';
 // import WhatIsWorkspace from '../../components/Sections-Components/WhatIsWorkspace';
@@ -90,7 +91,7 @@ const Home = () => {
             </Section>
             <Section bg={ bgWall }>
                 <Container>
-
+                    <FlipCards />
                 </Container>
             </Section>
             <Section bg={bg6} id="vertical-accordion">
