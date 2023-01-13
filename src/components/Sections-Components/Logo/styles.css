@@ -23,11 +23,5 @@
     width: 100%;
     max-width: 16rem;
     bottom: -1.5rem;
-    right: -8rem;
-}
-
-@media screen and (max-width: 768px) {
-    .logo img {
-        right: 0;
-    }
+    right: 0;
 }

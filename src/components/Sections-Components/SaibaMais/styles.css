@@ -114,8 +114,26 @@
 
 @media screen and (max-width: 768px) {
     .saiba-mais {
-        padding: 1rem;
+        padding: 0;
         padding-bottom: 7rem;
+        margin: 0 auto;
+        margin-top: 17rem;
+    }
+
+    .saiba-mais h3 {
+        position: relative;
+        backdrop-filter: blur(20px);
+    }
+
+    .saiba-mais h3::after {
+        content: '';
+        background-color: rgba(255, 255, 255, .5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
     }
 
     .saiba-mais h3 span {

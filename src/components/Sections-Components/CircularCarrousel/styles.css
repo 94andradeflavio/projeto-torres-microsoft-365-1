@@ -20,7 +20,7 @@
     position: relative;
     width: var(--slider-size);
     height: var(--slider-size);
-    margin: -18rem 0;
+    margin: 12rem 0;
     z-index: 1;
 }
 

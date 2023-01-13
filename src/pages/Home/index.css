@@ -17,8 +17,16 @@ img.retranca {
     margin: 0 auto;
 }
 
+section.wp-capa {
+    background-position: 12% !important;
+}
+
+section.wp-asian {
+    background-position: 5% bottom !important;
+}
+
 @media screen and (max-width: 768px) {
-    section .wp-capa {
-        background-position: 12%;
+    section.wp-sm {
+        background-position: 80% center;
     }
 }
