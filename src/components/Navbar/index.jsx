@@ -15,33 +15,48 @@ const Navbar = () => {
             functions: () => updateMenu()
         },
         {
-            name: 'Google Workspace',
-            to: 'google-workspace',
+            name: 'Abas',
+            to: 'tab',
             functions: () => updateMenu()
         },
         {
-            name: 'Vivo Empresas',
-            to: 'vivo-empresas',
+            name: 'Carrossel',
+            to: 'carrousel',
             functions: () => updateMenu()
         },
         {
-            name: 'O que é Workspace',
-            to: 'what-is-workspace',
+            name: 'Acordeon',
+            to: 'accordion',
             functions: () => updateMenu()
         },
         {
-            name: 'Larger Carrousel',
-            to: 'larger-carrousel',
+            name: 'Carrossel Circular',
+            to: 'circular-carrousel',
             functions: () => updateMenu()
         },
         {
-            name: 'Vertical Accordion',
-            to: 'vertical-accordion',
+            name: 'Slider Show Down',
+            to: 'show-down-slider',
             functions: () => updateMenu()
         },
         {
-            name: 'Image with text',
-            to: 'image-with-text',
+            name: 'Tooltip / Vídeo',
+            to: 'tooltip',
+            functions: () => updateMenu()
+        },
+        {
+            name: 'Flip Cards',
+            to: 'flip-cards',
+            functions: () => updateMenu()
+        },
+        {
+            name: 'Saiba Mais',
+            to: 'saiba-mais',
+            functions: () => updateMenu()
+        },
+        {
+            name: 'Escrolável / DnD',
+            to: 'scrollable',
             functions: () => updateMenu()
         },
     ]

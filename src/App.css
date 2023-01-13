@@ -48,7 +48,13 @@ button.btn {
 
 .video-react {
   margin: 3rem auto;
-  max-width: 45rem !important;
+  /* max-width: 45rem !important; */
+}
+
+.video-react .video-react-big-play-button {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 768px) {

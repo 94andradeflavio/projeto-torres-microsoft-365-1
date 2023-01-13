@@ -52,53 +52,53 @@ const Home = () => {
     return (
         <>
             <img src={retrancaImg} alt="" className="retranca" />
-            <Section bg={bg1} id="start" lineBG='#B3D682'>
+            <Section bg={bg1} lineBG='#B3D682' id="start" >
                 <Container>
                     <Logo />
                 </Container>
             </Section>
-            <Section bg={bgWall} bgMask={ bgMaskPurpleDiagonal } id="google-workspace" >
+            <Section bg={bgWall} bgMask={ bgMaskPurpleDiagonal } id="tab" >
                 <Container>
                     <TabView />
                 </Container>
             </Section>
-            <Section bg={bgWall} id="vivo-empresas" lineBG='#bd4aff'>
+            <Section bg={bgWall} lineBG='#bd4aff' id="carrousel" >
                 <Container>
                     <Carrousel />
                 </Container>
             </Section>
-            <Section bg={bgAsian} id="what-is-workspace" lineBG='#bd4aff' bgOrientation='center top'>
+            <Section bg={bgAsian} lineBG='#bd4aff' bgOrientation='center top' id="accordion" >
                 <Container>
                     <VerticalAccordion />
                 </Container>
             </Section>
-            <Section bg={bgWall} id="larger-carrousel">
+            <Section bg={bgWall} id="circular-carrousel">
                 <Container>
                     <CircularCarrousel />
                 </Container>
             </Section>
-            <Section bg={ bgWall } lineBG="#83d300" >
+            <Section bg={ bgWall } lineBG="#83d300" id="show-down-slider" >
                 <Container>
                     <ShowDownSlider />
                 </Container>
             </Section>
-            <Section bg={ bgWall } bgMask={ bgMaskPurple } lineBG="#83d300" >
+            <Section bg={ bgWall } bgMask={ bgMaskPurple } lineBG="#83d300" id="tooltip" >
                 <Container>
                     <Tooltip />
                     <TimeLine />
                 </Container>
             </Section>
-            <Section bg={ bgWall }>
+            <Section bg={ bgWall } id="flip-cards" >
                 <Container>
                     <FlipCards />
                 </Container>
             </Section>
-            <Section bg={ bgMan } >
+            <Section bg={ bgMan } id="saiba-mais" >
                 <Container>
                     <SaibaMais />
                 </Container>
             </Section>
-            <Section bg={ bgWall } bgMask={ bgMaskPurple } lineBG="#B3D682" mt="-7.5rem">
+            <Section bg={ bgWall } bgMask={ bgMaskPurple } lineBG="#B3D682" mt="-7.5rem" id="scrollable" >
                 <Container>
                     <ScrollableContent />
                     <DragAndDrop />
