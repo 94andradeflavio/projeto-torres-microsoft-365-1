@@ -13,6 +13,7 @@
     "gsap": "^3.11.3",
     "pipwerks-scorm-api-wrapper": "^0.1.2",
     "react": "^18.1.0",
+    "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.1.0",
     "react-html5video": "^2.5.1",
     "react-loader-spinner": "^5.3.4",

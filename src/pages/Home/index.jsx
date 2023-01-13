@@ -5,6 +5,7 @@ import './index.css'
 import Section from '../../components/Section';
 import Carrousel from '../../components/Sections-Components/Carrousel';
 import Container from '../../components/Container';
+import DragAndDrop from '../../components/Sections-Components/DragAndDrop';
 import FlipCards from '../../components/Sections-Components/FlipCards';
 import Logo from '../../components/Sections-Components/Logo';
 // import ImageWithText from '../../components/Sections-Components/ImageWithText';
@@ -97,9 +98,10 @@ const Home = () => {
                     <SaibaMais />
                 </Container>
             </Section>
-            <Section bg={ bgWall } bgMask={ bgMaskPurple } lineBG="#83d300" mt="-7.5rem">
+            <Section bg={ bgWall } bgMask={ bgMaskPurple } lineBG="#B3D682" mt="-7.5rem">
                 <Container>
                     <ScrollableContent />
+                    <DragAndDrop />
                 </Container>
             </Section>
             <Section bg={bgWall}>
