@@ -46,19 +46,10 @@ button.btn {
   position: relative;
 }
 
-/* button.btn:after {
-  --size: 2rem;
-
-  content: '';
-  position: absolute;
-  background-image: url('./assets/images/hand.png');
-  background-size: cover;
-  width: var(--size);
-  height: var(--size);
-  top: 50%;
-  right: calc((var(--size) * -1) - .4rem);
-  transform: translateY(-50%);
-} */
+.video-react {
+  margin: 3rem auto;
+  max-width: 45rem !important;
+}
 
 @media screen and (max-width: 768px) {
   button.btn {

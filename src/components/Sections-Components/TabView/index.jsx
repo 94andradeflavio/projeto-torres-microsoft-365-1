@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import './styles.css'
 
 const tabData = [
@@ -40,7 +40,6 @@ const TabView = () => {
 
     const handleClick = index => {
         setActive(index)
-        handleLine(index)
     }
 
     const handleLine = i => {
@@ -49,8 +48,11 @@ const TabView = () => {
 
         line.style.top = `${selectedReference.offsetTop}px`
         line.style.height = `${selectedReference.offsetHeight}px`
-        line.style.backgroundColor = 'red'
     }
+
+    useEffect(() => {
+        handleLine(active)
+    }, [active])
 
     return (
         <div className="tab-view">

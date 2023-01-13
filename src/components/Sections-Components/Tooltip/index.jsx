@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import Video from '../Video'
+import { Player } from 'video-react'
+import 'video-react/dist/video-react.css'
+
 import { Tooltip as TooltipElement } from 'react-tooltip'
 import 'react-tooltip/dist/react-tooltip.css'
 import './styles.css'
@@ -40,7 +42,7 @@ const Tooltip = () => {
                     vitae perspiciatis eligendi nostrum. Corrupti eaque excepturi nihil totam blanditiis, molestias cum.
                 </p>
             </div>
-            <Video source={ videoSource } title="Título do vídeo" />
+            <Player src={ videoSource } />
             <div className="button-with-text">
                 <button id="tooltip-2"
                     onMouseEnter={() => {
