@@ -74,3 +74,21 @@
     right: 0;
     transform: translateX(100%) translatey(-50%);
 }
+
+@media screen and (max-width: 768px) {
+    .timeline-wrapper .carousel {
+        width: 80%;
+    }
+
+    .timeline-wrapper .nav {
+        color: #ed3e81;
+    }
+
+    .timeline-wrapper .nav.left {
+        left: 2rem;
+    }
+
+    .timeline-wrapper .nav.right {
+        right: 2rem;
+    }
+}

@@ -56,7 +56,7 @@ const ShowDownSlider = () => {
 
     return (
         <div className="show-down-slider">
-            <h2>Conteúdo do slide</h2>
+            <h3>Conteúdo do slide</h3>
             <p>Clique nos quadrinhos para obter mais informações sobre o conteúdo do slide.</p>
             <div className="show-down-wrapper">
                 { data.map((item, index) => (

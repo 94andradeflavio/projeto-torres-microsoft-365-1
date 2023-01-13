@@ -16,7 +16,7 @@ import { ReactComponent as Icon8 } from '../../../assets/images/carrousel/circul
 const data = [
     {
         title: "Item 1",
-        text: "Na página inicial, acessando o Vivo Play, temos os aplicativos Nextflix, Amazon Prime Video, Youtube e Youtube Kids.<br/>Para Netflix, a contratação de planos é realizada diretamente com a Vivo.",
+        text: "Na página inicial, acessando o Vivo Play, temos os aplicativos Nextflix, Amazon Prime Video, Youtube e Youtube Kids. Para Netflix, a contratação de planos é realizada diretamente com a Vivo.",
         image: <Icon1 />
     },
     {
@@ -31,7 +31,7 @@ const data = [
     },
     {
         title: "Item 4",
-        text: "Na página inicial, acessando o Vivo Play, temos os aplicativos Nextflix, Amazon Prime Video, Youtube e Youtube Kids.<br/>Para Netflix, a contratação de planos é realizada diretamente com a Vivo.",
+        text: "Na página inicial, acessando o Vivo Play, temos os aplicativos Nextflix, Amazon Prime Video, Youtube e Youtube Kids. Para Netflix, a contratação de planos é realizada diretamente com a Vivo.",
         image: <Icon4 />
     },
     {
@@ -186,36 +186,44 @@ const CircularCarrousel = () => {
     }
 
     return (
-        <div className="circular-carrousel">
-            <div className="content">
-                <div className="wrapper">
-                    { data.map((item, index) => {
-                        return (
-                            <div 
-                                className={`item ${index + 1} ${ (itemActive === index) && 'active' }`} 
-                                key={index}
-                                onClick={_ => handleClick(index)}>
-                                { item.image }
-                            </div>
-                        )
-                    }) }
-                    <svg viewBox="0 0 300 300" ref={svgRef} className="circle-svg">
-                        <circle id="holder" ref={circleRef} className="st0" cx="151" cy="151" r="150" />
-                    </svg>
+        <div className="circular-wrapper">
+            <h4>Conheça o carrossel giratório</h4>
+            <div className="circular-carrousel">
+                <div className="content">
+                    <div className="wrapper">
+                        { data.map((item, index) => {
+                            return (
+                                <div 
+                                    className={`item ${index + 1} ${ (itemActive === index) && 'active' }`} 
+                                    key={index}
+                                    onClick={_ => handleClick(index)}>
+                                    { item.image }
+                                </div>
+                            )
+                        }) }
+                        <svg viewBox="0 0 300 300" ref={svgRef} className="circle-svg">
+                            <circle id="holder" ref={circleRef} className="st0" cx="151" cy="151" r="150" />
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <div className="text-area">
-                <h4>Conheça o carrossel giratório</h4>
-                <div className='text-item'>
-                    <h3>{ data[itemActive].title }: </h3>
-                    <p>
-                        { data[itemActive].text }
-                    </p>
-                </div>
-                <div className="controls">
-                    <button className="prev" onClick={handlePrevButton}>&uArr;</button>
-                    <p><span>0{itemActive + 1}</span>/0{totalItems}</p>
-                    <button className="next" onClick={handleNextButton}>&dArr;</button>
+                <div className="text-area">
+                    <div className='text-item'>
+                        <h3>{ data[itemActive].title }: </h3>
+                        <p>
+                            { data[itemActive].text }
+                        </p>
+                    </div>
+                    <div className="controls">
+                        <button className="prev" onClick={handlePrevButton}>
+                            <span className="web">&uArr;</span>
+                            <span className="mobile">&lArr;</span>
+                        </button>
+                        <p><span>0{itemActive + 1}</span>/0{totalItems}</p>
+                        <button className="next" onClick={handleNextButton}>
+                            <span className="web">&dArr;</span>
+                            <span className="mobile">&rArr;</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

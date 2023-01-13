@@ -19,3 +19,9 @@ section > .bottom-line {
     bottom: 0;
     left: 0;
 }
+
+@media screen and (max-width: 768px) {
+    section > .section-mask {
+        padding-bottom: 4rem;
+    }
+}

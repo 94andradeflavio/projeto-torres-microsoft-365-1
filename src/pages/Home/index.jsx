@@ -39,7 +39,7 @@ const Home = () => {
     return (
         <>
             <img src={retrancaImg} alt="" className="retranca" />
-            <Section bg={bg1} lineBG='#B3D682' id="start" >
+            <Section bg={bg1} lineBG='#B3D682' id="start" customClass='wp-capa' >
                 <Container>
                     <Logo />
                 </Container>
@@ -54,7 +54,7 @@ const Home = () => {
                     <Carrousel />
                 </Container>
             </Section>
-            <Section bg={bgAsian} lineBG='#bd4aff' bgOrientation='center top' id="accordion" >
+            <Section bg={bgAsian} lineBG='#bd4aff' bgOrientation='center top' id="accordion" customClass='wp-asian' >
                 <Container>
                     <VerticalAccordion />
                 </Container>
@@ -80,7 +80,7 @@ const Home = () => {
                     <FlipCards />
                 </Container>
             </Section>
-            <Section bg={ bgMan } id="saiba-mais" >
+            <Section bg={ bgMan } id="saiba-mais" customClass='wp-sm' >
                 <Container>
                     <SaibaMais />
                 </Container>

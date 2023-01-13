@@ -48,16 +48,16 @@ const FlipCards = _ => {
 
     return (
         <div className="flipcards-wrapper">
-            <h3>Funcionalidades da Plataforma Exclusiva</h3>
+            <h4>Funcionalidades da Plataforma Exclusiva</h4>
             <div className="flipcards-area">
                 { cardsData.map((card, i) => {
                     return (
                         <div className="flipcard" value={`1-${i + 1}`} key={i} onClick={ _ => handleFlip(i) }>
                             <div className={ `flipcard-inner ${ flip[i].active ? 'active' : '' }` }>
                                 <div className="flipcard-front" style={{ backgroundColor: card.cardColor }}>
-                                    <h3 className="shadow" position="top">{ card.title }</h3>
-                                    <h3>{ card.title }</h3>
-                                    <h3 className="shadow" position="bottom">{ card.title }</h3>
+                                    <h4 className="shadow" position="top">{ card.title }</h4>
+                                    <h4>{ card.title }</h4>
+                                    <h4 className="shadow" position="bottom">{ card.title }</h4>
                                     <img src={ imgFlip } alt={ card.title } className="img-flip" />
                                 </div>
                                 <div className="flipcard-back" style={{ backgroundColor: card.cardColor }}>

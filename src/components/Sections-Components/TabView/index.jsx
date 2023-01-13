@@ -46,8 +46,8 @@ const TabView = () => {
         const selectedReference = document.querySelectorAll('.tab-view li')[i]
         const line = lineRef.current
 
-        line.style.top = `${selectedReference.offsetTop}px`
-        line.style.height = `${selectedReference.offsetHeight}px`
+        line.style.top = `${selectedReference.offsetTop + (selectedReference.offsetHeight / 2) + 4 }px`
+        line.style.height = `${selectedReference.offsetHeight * 2}px`
     }
 
     useEffect(() => {
@@ -69,7 +69,7 @@ const TabView = () => {
                 </ul>
             </div>
             <div className="content">
-                <h4 className="title">{ tabData[active].title }</h4>
+                <h3 className="title">{ tabData[active].title }</h3>
                 <p>{ tabData[active].description }</p>
             </div>
         </div>

@@ -1,4 +1,8 @@
-.logo-wrapper {
+.logo {
+    position: relative;
+}
+
+.logo .logo-wrapper {
     width: 100%;
     min-height: 80vh;
     display: flex;
@@ -7,17 +11,23 @@
     position: relative;
 }
 
-.logo-wrapper h1 {
+.logo .logo-wrapper h1 {
     color: #660099;
     font-size: 4rem;
     font-weight: 500;
     margin-bottom: 2rem;
 }
 
-.logo-wrapper img {
+.logo  img {
     position: absolute;
     width: 100%;
     max-width: 16rem;
     bottom: -1.5rem;
     right: -8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        right: 0;
+    }
 }

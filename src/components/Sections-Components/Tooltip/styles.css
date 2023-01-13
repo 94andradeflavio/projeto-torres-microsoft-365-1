@@ -3,7 +3,7 @@
     align-items: center;
     gap: 2rem;
     width: 100%;
-    max-width: 35rem;
+    max-width: 50rem;
     margin: 0 auto;
     z-index: 1;
 }
@@ -47,13 +47,14 @@
     background-color: #fff;
     backdrop-filter: blur(20px);
     color: #000;
-    max-width: 20rem;
+    width: 95%;
+    max-width: 25rem;
     z-index: 999;
     padding-bottom: 3rem;
 }
 
 .tooltip-wrapper .personal-tooltip h6 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #660099;
     margin-bottom: .5rem;
 }

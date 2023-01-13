@@ -64,3 +64,14 @@
     justify-content: center;
     pointer-events: none;
 }
+
+@media screen and (max-width: 768px) {
+    .drag-and-drop-wrapper {
+        flex-direction: column;
+        margin-top: 6rem;
+    }
+
+    .drag-and-drop-wrapper .droppable-area, .drag-and-drop-wrapper .draggable-area {
+        width: 100%;
+    }
+}

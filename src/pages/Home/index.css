@@ -16,3 +16,9 @@ img.retranca {
     max-width: 25rem;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+    section .wp-capa {
+        background-position: 12%;
+    }
+}

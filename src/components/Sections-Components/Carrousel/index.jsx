@@ -45,6 +45,15 @@ const Carrousel = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
     
     const prev = () => {
@@ -62,7 +71,7 @@ const Carrousel = () => {
             <Slider {...settings} ref={slider}>
                 { data.map((item, index) => {
                     return (
-                        <div className="item" key={index}>
+                        <div className="item" value={ index + 1 } key={index}>
                             <h3>{ item.title }</h3>
                             <p>{ item.text }</p>
                         </div>

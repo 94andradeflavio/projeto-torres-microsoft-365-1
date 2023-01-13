@@ -13,8 +13,8 @@ const SaibaMais = () => {
     
     return (
         <div className="saiba-mais">
-            <h4><span>isus proin</span></h4>
-            <h4>Lorem ipsum</h4>
+            <h3><span>isus proin</span></h3>
+            <h3>Lorem ipsum</h3>
 
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam culpa quae facere, qui, quas quidem, 

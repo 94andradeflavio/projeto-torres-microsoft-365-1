@@ -3,7 +3,7 @@ import "./styles.css";
 import {
   TiChevronLeftOutline,
   TiChevronRightOutline,
-} from "https://cdn.skypack.dev/react-icons/ti";
+} from "react-icons/ti";
 
 const cardsData = [
     {

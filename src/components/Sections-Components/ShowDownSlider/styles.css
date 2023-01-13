@@ -1,4 +1,4 @@
-.show-down-slider h2 {
+.show-down-slider h3 {
     color: #eb3c7d;
     text-align: center;
     font-size: 3rem;
@@ -17,6 +17,10 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+.show-down-slider .show-down-wrapper .slider {
+    transition: all .3s linear;
 }
 
 .show-down-slider .show-down-wrapper .slider > img {

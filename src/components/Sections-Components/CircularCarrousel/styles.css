@@ -1,5 +1,5 @@
 .circular-carrousel {
-    --slider-width: 35rem;
+    --slider-size: 35rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,8 +8,8 @@
 
 .circular-carrousel .content {
     position: relative;
-    margin: -10rem 0;
-    margin-left: calc(var(--slider-width) / 1.35 * -1);
+    margin: -17rem 0;
+    margin-left: calc(var(--slider-size) / 1.35 * -1);
 }
 
 .circular-carrousel .content .wrapper {
@@ -18,12 +18,14 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    width: var(--slider-width);
+    width: var(--slider-size);
+    height: var(--slider-size);
     margin: -18rem 0;
     z-index: 1;
 }
 
 .circular-carrousel .content .wrapper .item {
+    --transition-time: .5s;
     --size: 12rem;
     position: relative;
     width: var(--size);
@@ -34,10 +36,15 @@
     background: #b3d682;
     border: .5rem solid #b3d682;
     padding: 1rem;
+    transition: background var(--transition-time) linear, border var(--transition-time) linear;
 }
 
 .circular-carrousel .content .wrapper .item svg {
     width: 7rem;
+}
+
+.circular-carrousel .content .wrapper .item svg path {
+    fill: #370054;
 }
 
 .circular-carrousel .content .wrapper .item.active {
@@ -45,6 +52,10 @@
     border-color: #eb3c7d;
     transform: scale(1.1);
     pointer-events: none;
+}
+
+.circular-carrousel .content .wrapper .item.active svg path {
+    fill: #eb3c7d;
 }
 
 .circular-carrousel .content .wrapper svg {
@@ -56,6 +67,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all .3s linear;
 }
 
 .circular-carrousel .content .wrapper svg .st0 {
@@ -65,6 +77,8 @@
 }
 
 .circular-carrousel .text-area {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
     color: #370054;
     flex: 1;
     display: flex;
@@ -75,12 +89,12 @@
     position: relative;
 }
 
-.circular-carrousel .text-area h4 {
-    position: absolute;
-    font-size: 3rem;
+.circular-wrapper h4 {
+    font-size: 2.5rem;
     color: #FF9C05;
     font-weight: 500;
-    top: -12rem;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .circular-carrousel .text-area h3 {
@@ -107,6 +121,10 @@
     color: #FF9C05;
 }
 
+.circular-carrousel .text-area .controls button span.mobile {
+    display: none;
+}
+
 .circular-carrousel .text-area .text-item {
     width: 100%;
     padding-right: 4rem;
@@ -130,4 +148,49 @@
 
 .circular-carrousel .text-area button:hover {
     transform: scale(1);
+}
+
+@media screen and (max-width: 768px) {
+    .circular-carrousel {
+        gap: 2rem;
+    }
+
+    .circular-carrousel .content {
+        margin-left: calc(var(--slider-size) / 1.2 * -1);
+        z-index: 5;
+    }
+
+    .circular-carrousel .content .wrapper {
+        margin: 15rem 0;
+        margin-bottom: 12rem;
+    }
+
+    .circular-carrousel .text-area {
+        margin-left: 0;
+        padding: 0 .5rem;
+    }
+
+    .circular-carrousel .text-area .text-item {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .circular-carrousel .text-area .controls {
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+        top: auto;
+        bottom: -4rem;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .circular-carrousel .text-area .controls button span.mobile {
+        display: block;
+    }
+
+    .circular-carrousel .text-area .controls button span.web {
+        display: none;
+    }
 }

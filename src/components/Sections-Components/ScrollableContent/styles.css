@@ -6,7 +6,7 @@
 }
 
 .scrollable-wrapper img {
-    width: 80%;
+    width: 90%;
     max-width: 30rem;
 }
 
@@ -19,9 +19,16 @@
 .scrollable-wrapper .content h3 {
     font-size: 2.5rem;
     color: #ff9900;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
 .scrollable-wrapper .content p {
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .scrollable-wrapper {
+        flex-direction: column;
+    }
 }

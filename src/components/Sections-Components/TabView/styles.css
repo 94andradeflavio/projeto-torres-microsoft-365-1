@@ -19,7 +19,7 @@
 .tab-view .line-area .line {
     background-color: #fff;
     position: absolute;
-    width: .4rem;
+    width: .3rem;
     height: 100%;
     left: 0;
     border-radius: 1rem;
@@ -33,6 +33,24 @@
     top: 2rem;
     border-radius: 1rem;
     transition: all .3s ease-in-out;
+    transform: translateY(-50%);
+}
+
+.tab-view .line-area .line .inner-line::before {
+    --size: 15px;
+
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+
+    width: 0; 
+    height: 0; 
+    border-top: var(--size) solid transparent;
+    border-bottom: var(--size) solid transparent; 
+    border-left:var(--size) solid #ff9900;
+    z-index: -1;
 }
 
 .tab-view .line-area ul {
@@ -50,10 +68,11 @@
     cursor: pointer;
     text-transform: capitalize;
     transition: all .3s linear;
+    user-select: none;
 }
 
 .tab-view .line-area ul li:hover {
-    filter: drop-shadow(2px 4px 6px black);
+    filter: drop-shadow(2px 2px 3px black);
 }
 
 .tab-view .line-area ul li.active {
@@ -64,11 +83,44 @@
     text-align: center;
 }
 
-.tab-view .content h4 {
+.tab-view .content h3 {
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
 .tab-view .content p {
     font-size: 1.6rem;
+}
+
+@media screen and (max-width: 768px) {
+    .tab-view {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .tab-view .line-area {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        height: auto;
+        width: 100%;
+    }
+
+    .tab-view .line-area .line {
+        display: none;
+    }
+
+    .tab-view .line-area ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        gap: 1rem;
+    }
+
+    .tab-view .line-area ul::-webkit-scrollbar {
+        height: .3rem;
+    }
 }
