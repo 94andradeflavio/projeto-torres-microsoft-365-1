@@ -8,30 +8,17 @@ import Container from '../../components/Container';
 import DragAndDrop from '../../components/Sections-Components/DragAndDrop';
 import FlipCards from '../../components/Sections-Components/FlipCards';
 import Logo from '../../components/Sections-Components/Logo';
-// import ImageWithText from '../../components/Sections-Components/ImageWithText';
-// import WhatIsWorkspace from '../../components/Sections-Components/WhatIsWorkspace';
-// import HorizontalAccordion from '../../components/Sections-Components/HorizontalAccordion';
-// import LargerCarrousel from '../../components/Sections-Components/LargerCarrousel';
 import CircularCarrousel from '../../components/Sections-Components/CircularCarrousel';
 import SaibaMais from '../../components/Sections-Components/SaibaMais';
 import ShowDownSlider from '../../components/Sections-Components/ShowDownSlider';
 import TabView from '../../components/Sections-Components/TabView';
-// import TabViewWithImage from '../../components/Sections-Components/TabViewWithImage';
 import ScrollableContent from '../../components/Sections-Components/ScrollableContent';
 import TimeLine from '../../components/Sections-Components/TimeLine';
 import Tooltip from '../../components/Sections-Components/Tooltip';
 import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
-// import Video from '../../components/Sections-Components/Video';
 
 // Backgrounds
 import bg1 from '../../assets/images/bg-1.png'
-// import bg2 from '../../assets/images/bg-2.png'
-// import bg3 from '../../assets/images/bg-3.png'
-// import bg4 from '../../assets/images/bg-4.png'
-// import bg5 from '../../assets/images/bg-5.png'
-// import bg6 from '../../assets/images/bg-6.png'
-// import bg7 from '../../assets/images/bg-7.png'
-// import bg8 from '../../assets/images/bg-8.png'
 
 import bgWall from '../../assets/images/bg-wall.png'
 import bgMan from '../../assets/images/bg-man.png'

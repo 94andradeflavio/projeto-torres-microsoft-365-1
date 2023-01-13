@@ -18,10 +18,27 @@
     color: #660099;
 }
 
+.saiba-mais h4 + h4 {
+    margin-bottom: 2rem;
+}
+
 .saiba-mais p {
+    position: relative;
     margin-top: 2rem;
     font-size: 1.4rem;
     color: #660099;
+    backdrop-filter: blur(20px);
+}
+
+.saiba-mais p::after {
+    content: '';
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 .saiba-mais button {
