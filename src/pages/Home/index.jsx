@@ -4,6 +4,7 @@ import './index.css'
 // Components
 import Section from '../../components/Section';
 import Carrousel from '../../components/Sections-Components/Carrousel';
+import ClickTip from '../../components/Sections-Components/ClickTip';
 import Container from '../../components/Container';
 import DragAndDrop from '../../components/Sections-Components/DragAndDrop';
 import FlipCards from '../../components/Sections-Components/FlipCards';
@@ -17,6 +18,7 @@ import ScrollableContent from '../../components/Sections-Components/ScrollableCo
 import TimeLine from '../../components/Sections-Components/TimeLine';
 import Tooltip from '../../components/Sections-Components/Tooltip';
 import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
+import VerticalTabViewWithImage from '../../components/Sections-Components/VerticalTabViewWithImage';
 
 // Backgrounds
 import bg1 from '../../assets/images/bg-1.png'
@@ -71,7 +73,7 @@ const Home = () => {
                         </p>
                     </ImageWithText>
                     <SmallerCarrousel />
-                    <div className="text-box">
+                    <div className="text-box" value="1">
                         <p>
                             Com o Cloud Azure, o cliente tem flexibilidade para inovar no seu negócio e ainda conta com 
                             a modalidade de pagamento baseada em consumo (on demand), que permite a redução de custos 
@@ -100,6 +102,8 @@ const Home = () => {
                             Vamos conhecer agora como funciona a arquitetura Azure e seus principais serviços.
                         </p>
                     </div>
+                    <ClickTip text='Clique nos conceitos para expandir as informações.' center />
+                    <VerticalTabViewWithImage />
                 </Container>
             </Section>
             <Section bg={bgWall} bgMask={ bgMaskPurpleDiagonal } id="tab" >

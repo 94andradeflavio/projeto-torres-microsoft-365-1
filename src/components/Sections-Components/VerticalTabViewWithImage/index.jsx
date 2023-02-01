@@ -1,10 +1,9 @@
 import { useState } from "react";
-import './styles.css';
+import './styles.css'
 
-import { data } from "../../../data/TabviewWithImage";
+import { data } from "../../../data/VerticalTabviewWithImage";
 
-
-const TabViewWithImage = () => {
+const VerticalTabViewWithImage = () => {
     const [indexItem, setIndexItem] = useState(0)
 
     const chooseItem = item => {
@@ -12,7 +11,7 @@ const TabViewWithImage = () => {
     }
 
     return (
-        <div className="tab-view-with-image">
+        <div className="verticalTabViewWithImage-wrapper">
             <div className="tab-icons">
                 { data.map((item, index) => (
                     <div className={ `icon ${ index === indexItem ? 'active' : '' }` } key={index} onClick={_ => chooseItem(index)}>
@@ -32,4 +31,4 @@ const TabViewWithImage = () => {
     )
 }
 
-export default TabViewWithImage
+export default VerticalTabViewWithImage
