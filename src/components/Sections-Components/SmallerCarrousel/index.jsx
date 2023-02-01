@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import image1 from '../../../assets/images/carrousel/smallerCarrousel/icon-1.png'
+import image2 from '../../../assets/images/carrousel/smallerCarrousel/icon-2.png'
 
 import arrowPrev from '../../../assets/images/carrousel/arrow-left.png'
 import arrowNext from '../../../assets/images/carrousel/arrow-right.png'
@@ -14,7 +15,7 @@ const SmallerCarrousel = () => {
     const slider = useRef(null)
 
     const settings = {
-        dots: true,
+        dots: false,
         arrows: false,
         infinite: true,
         speed: 500,
@@ -38,12 +39,31 @@ const SmallerCarrousel = () => {
                     <div className="flex-area">
                         <img src={image1} alt="" />
                         <div>
-                            <h4>Segurança</h4>
-                            <ul>
-                                <li>Proteger a empresa contra ameaças</li>
-                                <li>Reduzir a vulnerabilidade digital</li>
-                                <li>Preservar o sistema do negócio com eficácia</li>
-                            </ul>
+                            <h4>O que é o Microsoft Azure?</h4>
+                            <p>
+                                O Microsoft Azure é uma plataforma de nuvem que oferece mais de 200 produtos e serviços.
+                            </p>
+                            <p>
+                                A plataforma garantirá que o cliente esteja pronto para o futuro com as últimas 
+                                tecnologias de ponta em termos de big data, inteligência artificial, realidade 
+                                aumentada, IoT e segurança.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="item">
+                    <div className="flex-area">
+                        <img src={image2} alt="" />
+                        <div>
+                            <h4>Como a Vivo atua?</h4>
+                            <p>
+                                Em parceria com a Microsoft, a Vivo atua na comercialização dessa solução por meio 
+                                da modalidade de subscrição CSP (Cloud Service Provider). 
+                            </p>
+                            <p>
+                                A parceria Vivo Empresas com a Microsoft pode trazer mais eficiência financeira, 
+                                mobilidade, desempenho e segurança para o seu cliente.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -51,38 +71,15 @@ const SmallerCarrousel = () => {
                     <div className="flex-area">
                         <img src={image1} alt="" />
                         <div>
-                            <h4>safasfdasf</h4>
-                            <ul>
-                                <li>Proteger a empresa contra ameaças</li>
-                                <li>Reduzir a vulnerabilidade digital</li>
-                                <li>Preservar o sistema do negócio com eficácia</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="flex-area">
-                        <img src={image1} alt="" />
-                        <div>
-                            <h4>fffffffffff</h4>
-                            <ul>
-                                <li>Proteger a empresa contra ameaças</li>
-                                <li>Reduzir a vulnerabilidade digital</li>
-                                <li>Preservar o sistema do negócio com eficácia</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="flex-area">
-                        <img src={image1} alt="" />
-                        <div>
-                            <h4>ffffassasddf</h4>
-                            <ul>
-                                <li>Proteger a empresa contra ameaças</li>
-                                <li>Reduzir a vulnerabilidade digital</li>
-                                <li>Preservar o sistema do negócio com eficácia</li>
-                            </ul>
+                            <h4>Por que o Cloud Azure é necessário?</h4>
+                            <p>
+                                O Azure é a única nuvem híbrida consistente, pois oferece produtividade incomparável 
+                                ao desenvolvedor, além de fornecer segurança abrangente e multicamadas. 
+                            </p>
+                            <p>
+                                Contar com os serviços em nuvem é a única maneira de uma empresa ter suas 
+                                informações e soluções disponíveis de maneira rápida e segura.
+                            </p>
                         </div>
                     </div>
                 </div>

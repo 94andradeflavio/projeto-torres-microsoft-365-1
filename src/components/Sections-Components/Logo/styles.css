@@ -21,7 +21,8 @@
 .logo  img {
     position: absolute;
     width: 100%;
-    max-width: 16rem;
-    bottom: -1.5rem;
-    right: 0;
+    max-width: 20rem;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }

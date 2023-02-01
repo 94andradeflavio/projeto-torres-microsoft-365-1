@@ -10,7 +10,7 @@ section > .section-mask {
     background-position: center center;
     width: 100%;
     padding: 4rem 0;
-    padding-bottom: 8rem;
+    /* padding-bottom: 8rem; */
 }
 
 section > .bottom-line {

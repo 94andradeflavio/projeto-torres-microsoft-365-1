@@ -8,7 +8,8 @@ const Section = ({
     bgOrientation = 'center center', 
     mt = '0', 
     id, 
-    lineBG = '', 
+    lineBG = '',
+    bgColor = 'transparent',
     bgMask = 'none',
     customClass = ''
 }) => {
@@ -23,6 +24,7 @@ const Section = ({
                 zIndex: mt !== '0' ? '-1' : '0'
             }} id={ id }>
             <div className="section-mask" style={{
+                backgroundColor: bgColor,
                 backgroundImage: `url(${bgMask})`,
             }}>
                 { children }

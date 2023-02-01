@@ -12,6 +12,7 @@ import CircularCarrousel from '../../components/Sections-Components/CircularCarr
 import SaibaMais from '../../components/Sections-Components/SaibaMais';
 import ShowDownSlider from '../../components/Sections-Components/ShowDownSlider';
 import TabView from '../../components/Sections-Components/TabView';
+import SmallerCarrousel from '../../components/Sections-Components/SmallerCarrousel'
 import ScrollableContent from '../../components/Sections-Components/ScrollableContent';
 import TimeLine from '../../components/Sections-Components/TimeLine';
 import Tooltip from '../../components/Sections-Components/Tooltip';
@@ -27,21 +28,78 @@ import bgMaskPurple from '../../assets/images/bg-mask-purple.png'
 import bgAsian from '../../assets/images/bg-asian.png'
 
 // Images
+import iwt1 from '../../assets/images/imageWithText/img-1.png'
 
 // retranca
 import retrancaImg from '../../assets/images/logo/retranca.png'
 
 // assinatura (final)
 import sign from '../../assets/images/logo/logo.png'
+import ImageWithText from '../../components/Sections-Components/ImageWithText';
 
 const Home = () => {
 
     return (
         <>
             <img src={retrancaImg} alt="" className="retranca" />
-            <Section bg={bg1} lineBG='#B3D682' id="start" customClass='wp-capa' >
+            <Section bg={bg1} id="start" customClass='wp-capa' >
                 <Container>
                     <Logo />
+                </Container>
+            </Section>
+            <Section bgColor='#660099'>
+                <Container>
+                    <ImageWithText 
+                        imgSource={iwt1} 
+                        personalClass='iwt-1'
+                        reverse 
+                        imgStyle={{
+                            maxWidth: '20rem'
+                        }}>
+                        <p>
+                            Os serviços de Cloud fazem parte de um mercado que sempre fomentou a inovação com grandes 
+                            avanços tecnológicos.
+                        </p>
+                        <p>
+                            Com o Vivo Cloud Azure, o cliente potencializa o alcance de suas metas e agiliza sua 
+                            transformação digital.
+                        </p>
+                        <p>
+                            É importante que você saiba que cada potencial cliente tem uma necessidade. Então, prepare-se 
+                            para mergulhar em experiências práticas e teóricas sobre o que é o Azure, como o produto 
+                            funciona e qual a sua posição no mercado.
+                        </p>
+                    </ImageWithText>
+                    <SmallerCarrousel />
+                    <div className="text-box">
+                        <p>
+                            Com o Cloud Azure, o cliente tem flexibilidade para inovar no seu negócio e ainda conta com 
+                            a modalidade de pagamento baseada em consumo (on demand), que permite a redução de custos 
+                            operacionais com uma configuração de infraestrutura realmente mais aderente às suas necessidades.
+                        </p>
+                        <p>
+                            O Azure é destinado à execução de aplicativos e serviços com base nos conceitos da computação 
+                            em nuvem híbrida.
+                        </p>
+                    </div>
+                </Container>
+            </Section>
+            <Section>
+                <Container>
+                    <div className="text-box" value="2">
+                        <h4>
+                            Cloud Azure<br/>
+                            <span>Sua arquitetura e seus serviços</span>
+                        </h4>
+                        <p>
+                            O Azure oferece a liberdade de criar, gerenciar e implantar aplicativos em uma vasta rede 
+                            global. Por ser um conjunto de serviços em nuvem, o cliente Azure poderá usar suas 
+                            estruturas e ferramentas favoritas.
+                        </p>
+                        <p>
+                            Vamos conhecer agora como funciona a arquitetura Azure e seus principais serviços.
+                        </p>
+                    </div>
                 </Container>
             </Section>
             <Section bg={bgWall} bgMask={ bgMaskPurpleDiagonal } id="tab" >
