@@ -35,6 +35,11 @@
   background: #db8300;
 }
 
+::selection {
+  color: #600090;
+  background: #b3d682;
+}
+
 button.btn {
   padding: .3rem 1rem;
   margin-top: 1rem;
@@ -58,7 +63,7 @@ button.btn {
   transform: translate(-50%, -50%);
 }
 
-p {
+p, ul li, span {
   font-size: 1.2rem !important;
   font-weight: 400;
 }

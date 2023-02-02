@@ -15,6 +15,7 @@ import ShowDownSlider from '../../components/Sections-Components/ShowDownSlider'
 import TabView from '../../components/Sections-Components/TabView';
 import SmallerCarrousel from '../../components/Sections-Components/SmallerCarrousel'
 import ScrollableContent from '../../components/Sections-Components/ScrollableContent';
+import TabViewAccordion from '../../components/Sections-Components/TabViewWithImage';
 import TimeLine from '../../components/Sections-Components/TimeLine';
 import Tooltip from '../../components/Sections-Components/Tooltip';
 import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
@@ -22,12 +23,12 @@ import VerticalTabViewWithImage from '../../components/Sections-Components/Verti
 
 // Backgrounds
 import bg1 from '../../assets/images/bg-1.png'
+import accordionBg from '../../assets/images/accordion-bg.png'
 
 import bgWall from '../../assets/images/bg-wall.png'
 import bgMan from '../../assets/images/bg-man.png'
 import bgMaskPurpleDiagonal from '../../assets/images/bg-mask-purple-diagonal.png'
 import bgMaskPurple from '../../assets/images/bg-mask-purple.png'
-import bgAsian from '../../assets/images/bg-asian.png'
 
 // Images
 import iwt1 from '../../assets/images/imageWithText/img-1.png'
@@ -86,7 +87,8 @@ const Home = () => {
                     </div>
                 </Container>
             </Section>
-            <Section>
+            <Section
+                lineBG='#bd4aff'>
                 <Container>
                     <div className="text-box" value="2">
                         <h4>
@@ -106,6 +108,40 @@ const Home = () => {
                     <VerticalTabViewWithImage />
                 </Container>
             </Section>
+            <Section
+                customClass='bg-vertical-accordion'
+                lineBG='#bd4aff' 
+                bg={ accordionBg }>
+                <Container>
+                    <VerticalAccordion />
+                </Container>
+            </Section>
+            <Section bgColor='#660099' customClass='cloud-azure'>
+                <Container>
+                    <h4><b>Cloud Azure</b></h4>
+                    <p>Conheça suas características</p>
+
+                    <p>O <span>Vivo Cloud Azure</span> conta com uma gama de funcionalidades que garantem apoio tecnológico ao negócio do cliente.</p>
+                    <p>Suas características técnicas são divididas em oito blocos, sendo eles:</p>
+
+                    <div className="block-area">
+                        <div className="block"><p>Administração</p></div>
+                        <div className="block"><p>Armazenamento</p></div>
+                        <div className="block"><p>Segurança</p></div>
+                        <div className="block"><p>Nuvem híbrida</p></div>
+                        <div className="block"><p>Computação</p></div>
+                        <div className="block"><p>Banco de dados</p></div>
+                        <div className="block"><p>Mídia e CDN</p></div>
+                        <div className="block"><p>Rede</p></div>
+                    </div>
+
+                    <div className="content-center">
+                        <h6><span>Conheça cada característica detalhadamente.</span></h6>
+                        <ClickTip text='Clique nos conceitos para expandir as informações.' whiteTheme />
+                    </div>
+                    <TabViewAccordion />
+                </Container>
+            </Section>
             <Section bg={bgWall} bgMask={ bgMaskPurpleDiagonal } id="tab" >
                 <Container>
                     <TabView />
@@ -114,11 +150,6 @@ const Home = () => {
             <Section bg={bgWall} lineBG='#bd4aff' id="carrousel" >
                 <Container>
                     <Carrousel />
-                </Container>
-            </Section>
-            <Section bg={bgAsian} lineBG='#bd4aff' bgOrientation='center top' id="accordion" customClass='wp-asian' >
-                <Container>
-                    <VerticalAccordion />
                 </Container>
             </Section>
             <Section bg={bgWall} id="circular-carrousel">

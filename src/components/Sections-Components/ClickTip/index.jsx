@@ -1,8 +1,8 @@
 import './styles.css'
 
-const clickTip = ({ text, center = false }) => {
+const clickTip = ({ text, center = false, whiteTheme = false }) => {
     return (
-        <div className={`clicktip-wrapper ${ center ? 'center' : '' }`}>
+        <div className={`clicktip-wrapper ${ center ? 'center' : '' } ${ whiteTheme ? 'white' : '' }`}>
             <span>{ text }</span>
         </div>
     )

@@ -2,3 +2,61 @@
     margin: 3rem 0;
     color: #000;
 }
+
+.verticalTabViewWithImage-wrapper .tab-icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.verticalTabViewWithImage-wrapper .tab-icons .icon {
+    background-color: #B3D682;
+    color: #660099;
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 16px 0px #bd4aff;
+}
+
+.verticalTabViewWithImage-wrapper .content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.verticalTabViewWithImage-wrapper .content > img {
+    width: 15rem;
+    box-shadow: 10px 10px 16px 0px #bd4aff;
+}
+
+/* .verticalTabViewWithImage-wrapper .content .text-area {
+    height: 100%;
+    padding-top: 2rem;
+} */
+
+.verticalTabViewWithImage-wrapper .content .text-area h4 {
+    color: #660099;
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.verticalTabViewWithImage-wrapper .content .text-area p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.verticalTabViewWithImage-wrapper .content .text-area ul {
+    list-style-position: inside;
+}
+
+.verticalTabViewWithImage-wrapper .content .text-area ul li:not(:last-child) {
+    margin-bottom: 1rem;
+}

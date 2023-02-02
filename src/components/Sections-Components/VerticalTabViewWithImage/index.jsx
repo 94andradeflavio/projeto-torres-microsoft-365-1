@@ -15,16 +15,24 @@ const VerticalTabViewWithImage = () => {
             <div className="tab-icons">
                 { data.map((item, index) => (
                     <div className={ `icon ${ index === indexItem ? 'active' : '' }` } key={index} onClick={_ => chooseItem(index)}>
-                        {item.icon}
+                        {item.title}
                     </div>
                 )) }
             </div>
             <div className="content">
-                {data[indexItem].icon}
+                <img src={ data[indexItem].image } alt={ data[indexItem].title } />
                 <div className="text-area">
-                    { data[indexItem].description.map((item, index) => (
+                    <h4>{ data[indexItem].title }</h4>
+                    { data[indexItem].paragraph && data[indexItem].paragraph.map((item, index) => (
                         <p key={index}>{item}</p>
                     ))  }
+                    { data[indexItem].list && (
+                        <ul>
+                            { data[indexItem].list.map((item, index) => (
+                                <li key={index}>{ item }</li>
+                            )) }
+                        </ul>
+                    ) }
                 </div>
             </div>
         </div>

@@ -38,7 +38,7 @@
 }
 
 .tab-view-with-image .tab-icons .icon.active {
-    background-color: #461E5D;
+    background-color: #B3D682;
 }
 
 .tab-view-with-image .tab-icons .icon::after,
@@ -64,11 +64,11 @@
 }
 
 .tab-view-with-image .tab-icons .icon svg path {
-    fill: #F44881;
+    fill: #83D300;
 }
 
 .tab-view-with-image .tab-icons .icon.active svg path {
-    fill: #fff;
+    fill: #660099;
 }
 
 .tab-view-with-image .content {
