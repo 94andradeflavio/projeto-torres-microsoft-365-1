@@ -63,11 +63,13 @@
     transform: scale(1);
 }
 
-.tab-view-with-image .tab-icons .icon svg path {
+.tab-view-with-image .tab-icons .icon svg path,
+.tab-view-with-image .tab-icons .icon svg circle {
     fill: #83D300;
 }
 
-.tab-view-with-image .tab-icons .icon.active svg path {
+.tab-view-with-image .tab-icons .icon.active svg path,
+.tab-view-with-image .tab-icons .icon.active svg circle {
     fill: #660099;
 }
 
@@ -88,7 +90,8 @@
     width: 10rem;
 }
 
-.tab-view-with-image .content svg path {
+.tab-view-with-image .content svg path,
+.tab-view-with-image .content svg circle {
     fill: #461E5D; 
 }
 
