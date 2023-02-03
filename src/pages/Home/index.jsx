@@ -152,7 +152,10 @@ const Home = () => {
             </Section>
             <Section bgColor='#210131' customClass='iwt-2' bgMask={ mask } id='fim'>
                 <Container>
-                    <ImageWithText imgSource={iwt2} customStyle={{ marginTop: '12rem' }}>
+                    <ImageWithText 
+                        imgSource={iwt2} 
+                        customStyle={{ marginTop: '12rem' }}
+                        imgStyle={{ maxWidth: '20rem' }}>
                         <h3>Cloud Azure</h3>
                         <p>
                             Tenha em mente que o Azure possui um <span>portfólio completo de 
