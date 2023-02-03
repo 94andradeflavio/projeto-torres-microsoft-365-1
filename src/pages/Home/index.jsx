@@ -3,42 +3,35 @@ import './index.css'
 
 // Components
 import Section from '../../components/Section';
-import Carrousel from '../../components/Sections-Components/Carrousel';
 import ClickTip from '../../components/Sections-Components/ClickTip';
 import Container from '../../components/Container';
-import DragAndDrop from '../../components/Sections-Components/DragAndDrop';
-import FlipCards from '../../components/Sections-Components/FlipCards';
 import Logo from '../../components/Sections-Components/Logo';
-import CircularCarrousel from '../../components/Sections-Components/CircularCarrousel';
-import SaibaMais from '../../components/Sections-Components/SaibaMais';
-import ShowDownSlider from '../../components/Sections-Components/ShowDownSlider';
-import TabView from '../../components/Sections-Components/TabView';
+import HorizontalAccordion from '../../components/Sections-Components/HorizontalAccordion';
 import SmallerCarrousel from '../../components/Sections-Components/SmallerCarrousel'
-import ScrollableContent from '../../components/Sections-Components/ScrollableContent';
-import TabViewAccordion from '../../components/Sections-Components/TabViewWithImage';
-import TimeLine from '../../components/Sections-Components/TimeLine';
-import Tooltip from '../../components/Sections-Components/Tooltip';
+import TabViewWithImage from '../../components/Sections-Components/TabViewWithImage';
+import TextCarrousel from '../../components/Sections-Components/TextCarrousel';
 import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
 import VerticalTabViewWithImage from '../../components/Sections-Components/VerticalTabViewWithImage';
 
 // Backgrounds
 import bg1 from '../../assets/images/bg-1.png'
 import accordionBg from '../../assets/images/accordion-bg.png'
-
-import bgWall from '../../assets/images/bg-wall.png'
-import bgMan from '../../assets/images/bg-man.png'
-import bgMaskPurpleDiagonal from '../../assets/images/bg-mask-purple-diagonal.png'
-import bgMaskPurple from '../../assets/images/bg-mask-purple.png'
+import cutWhiteSmallBg from '../../assets/images/cut-white-small-bg.png'
+import cutWhiteBg from '../../assets/images/cut-white-bg.png'
+import mask from '../../assets/images/mask.png'
 
 // Images
 import iwt1 from '../../assets/images/imageWithText/img-1.png'
+import iwt2 from '../../assets/images/imageWithText/img-2.png'
+import world from '../../assets/images/world.png'
 
 // retranca
 import retrancaImg from '../../assets/images/logo/retranca.png'
 
 // assinatura (final)
-import sign from '../../assets/images/logo/logo.png'
+import sign from '../../assets/images/sign.png'
 import ImageWithText from '../../components/Sections-Components/ImageWithText';
+
 
 const Home = () => {
 
@@ -50,7 +43,7 @@ const Home = () => {
                     <Logo />
                 </Container>
             </Section>
-            <Section bgColor='#660099'>
+            <Section bgColor='#640196' customClass='mask-effect' bgMask={ mask }>
                 <Container>
                     <ImageWithText 
                         imgSource={iwt1} 
@@ -59,7 +52,7 @@ const Home = () => {
                         imgStyle={{
                             maxWidth: '20rem'
                         }}>
-                        <p>
+                        <p id='servicos-cloud'>
                             Os serviços de Cloud fazem parte de um mercado que sempre fomentou a inovação com grandes 
                             avanços tecnológicos.
                         </p>
@@ -88,7 +81,10 @@ const Home = () => {
                 </Container>
             </Section>
             <Section
-                lineBG='#bd4aff'>
+                bg={ cutWhiteSmallBg }
+                lineBG='#bd4aff'
+                customClass='cloud-azure-section'
+                id='cloud-azure'>
                 <Container>
                     <div className="text-box" value="2">
                         <h4>
@@ -111,12 +107,13 @@ const Home = () => {
             <Section
                 customClass='bg-vertical-accordion'
                 lineBG='#bd4aff' 
-                bg={ accordionBg }>
+                bg={ accordionBg }
+                id='accordion'>
                 <Container>
                     <VerticalAccordion />
                 </Container>
             </Section>
-            <Section bgColor='#660099' customClass='cloud-azure'>
+            <Section bgColor='#460169' customClass='cloud-azure' id='tab-view'  bgMask={ mask }>
                 <Container>
                     <h4><b>Cloud Azure</b></h4>
                     <p>Conheça suas características</p>
@@ -139,55 +136,39 @@ const Home = () => {
                         <h6><span>Conheça cada característica detalhadamente.</span></h6>
                         <ClickTip text='Clique nos conceitos para expandir as informações.' whiteTheme />
                     </div>
-                    <TabViewAccordion />
+                    <TabViewWithImage />
                 </Container>
             </Section>
-            <Section bg={bgWall} bgMask={ bgMaskPurpleDiagonal } id="tab" >
+            <Section bg={ cutWhiteBg } bgSize='100% 100%' customClass='mercado' id='mercado'>
                 <Container>
-                    <TabView />
+                    <picture className="world">
+                        <h3>Posição de Mercado</h3>
+                        <img src={ world } alt="mapa mundi" />
+                    </picture>
+                    <TextCarrousel />
+                    <ClickTip text='Clique nos conceitos para expandir as informações.' center />
+                    <HorizontalAccordion />
                 </Container>
             </Section>
-            <Section bg={bgWall} lineBG='#bd4aff' id="carrousel" >
+            <Section bgColor='#210131' customClass='iwt-2' bgMask={ mask } id='fim'>
                 <Container>
-                    <Carrousel />
-                </Container>
-            </Section>
-            <Section bg={bgWall} id="circular-carrousel">
-                <Container>
-                    <CircularCarrousel />
-                </Container>
-            </Section>
-            <Section bg={ bgWall } lineBG="#83d300" id="show-down-slider" >
-                <Container>
-                    <ShowDownSlider />
-                </Container>
-            </Section>
-            <Section bg={ bgWall } bgMask={ bgMaskPurple } lineBG="#83d300" id="tooltip" >
-                <Container>
-                    <Tooltip />
-                    <TimeLine />
-                </Container>
-            </Section>
-            <Section bg={ bgWall } id="flip-cards" >
-                <Container>
-                    <FlipCards />
-                </Container>
-            </Section>
-            <Section bg={ bgMan } id="saiba-mais" customClass='wp-sm' >
-                <Container>
-                    <SaibaMais />
-                </Container>
-            </Section>
-            <Section bg={ bgWall } bgMask={ bgMaskPurple } lineBG="#B3D682" mt="-7.5rem" id="scrollable" >
-                <Container>
-                    <ScrollableContent />
-                    <DragAndDrop />
-                </Container>
-            </Section>
-            <Section bg={bgWall}>
-                <Container>
+                    <ImageWithText imgSource={iwt2} customStyle={{ marginTop: '12rem' }}>
+                        <h3>Cloud Azure</h3>
+                        <p>
+                            Tenha em mente que o Azure possui um <span>portfólio completo de 
+                            funcionalidades</span>, desde a camada de infraestrutura básica (máquina 
+                            virtual, espaço para armazenamento e componentes de rede) até a camada 
+                            de plataforma como serviços.
+                        </p>
+                        <p>
+                            Com essa plataforma, seu cliente tem a liberdade de criar, executar e 
+                            gerenciar aplicativos em várias nuvens com ferramentas e estruturas de 
+                            escolha dele. Consegue imaginar seu cliente tendo todos esses recursos 
+                            graças a sua consultoria?
+                        </p>
+                    </ImageWithText>
                     <div className="sign-area">
-                        <img src={ sign } alt="" />
+                        <img src={ sign } alt="assinatura" />
                     </div>
                 </Container>
             </Section>

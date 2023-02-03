@@ -8,8 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import image1 from '../../../assets/images/carrousel/smallerCarrousel/icon-1.png'
 import image2 from '../../../assets/images/carrousel/smallerCarrousel/icon-2.png'
 
-import arrowPrev from '../../../assets/images/carrousel/arrow-left.png'
-import arrowNext from '../../../assets/images/carrousel/arrow-right.png'
+import arrow from '../../../assets/images/carrousel/arrow.png'
 
 const SmallerCarrousel = () => {
     const slider = useRef(null)
@@ -85,8 +84,8 @@ const SmallerCarrousel = () => {
                 </div>
             </Slider>
             <div className="controls">
-                <button className="prev" onClick={prev}><img src={arrowPrev} alt="voltar" /></button>
-                <button className="next" onClick={next}><img src={arrowNext} alt="avançar" /></button>
+                <button className="prev" onClick={prev}><img src={arrow} alt="voltar" /></button>
+                <button className="next" onClick={next}><img src={arrow} alt="avançar" /></button>
             </div>
         </div>
     )

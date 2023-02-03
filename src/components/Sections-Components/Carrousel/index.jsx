@@ -67,7 +67,7 @@ const Carrousel = () => {
 
 
     return (
-        <div className="carrousel">
+        <div className="carrousel-wrapper">
             <Slider {...settings} ref={slider}>
                 { data.map((item, index) => {
                     return (

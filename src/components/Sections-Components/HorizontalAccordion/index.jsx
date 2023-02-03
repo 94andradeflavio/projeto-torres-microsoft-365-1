@@ -24,11 +24,10 @@ const HorizontalAccordion = () => {
                     <div className="content-wrapper">
                         <div className="content">
                             <div className="inner">
-                                <h5>{ item.title }</h5>
                                 <p>{ item.description }</p>
                             </div>
                         </div>
-                        <div className="outer" style={{background: `linear-gradient(to ${item.orientation === 'left' ? 'right' : 'left'}, rgba(0,0,0,0) 0%, ${ item.color } 25%)`}}></div>
+                        {/* <div className="outer" style={{background: `linear-gradient(to ${item.orientation === 'left' ? 'right' : 'left'}, rgba(0,0,0,0) 0%, ${ item.color } 25%)`}}></div> */}
                     </div>
                 </div>
             )) }

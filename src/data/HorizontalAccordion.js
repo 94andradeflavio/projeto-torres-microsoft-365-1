@@ -1,8 +1,5 @@
 // Icons
-import icon1 from '../assets/images/horizontalAccordion/icon-1.png';
-import icon2 from '../assets/images/horizontalAccordion/icon-2.png';
-import icon3 from '../assets/images/horizontalAccordion/icon-3.png';
-import icon4 from '../assets/images/horizontalAccordion/icon-4.png';
+import logo from '../assets/images/horizontalAccordion/logo.png'
 
 const colors = {
     lightBlue: 'rgba(0, 177, 244, 1)',
@@ -15,30 +12,38 @@ const colors = {
 export const data = [
     {
         orientation: 'left',
-        image: icon1,
-        title: 'Nativo da nuvem',
-        description: 'Funciona em qualquer dispositivo que tenha um navegador web, seja on-line ou off-line.',
+        image: logo,
+        description: 'Operamos ao redor do globo em mais de 140 países e mais regiões do que qualquer outro fornecedor.',
         color: colors.green
     },
     {
+        orientation: 'right',
+        image: logo,
+        description: 'Através da inovação constante, o Azure oferece uma solução segura, confiável e sustentável.',
+        color: colors.yellow
+    },
+    {
         orientation: 'left',
-        image: icon2,
-        title: 'Nativo da nuvem2',
-        description: 'Funciona em qualquer dispositivo que tenha um navegador web, seja on-line ou off-line.',
+        image: logo,
+        description: 'O Cloud Azure apresenta como característica principal a alta escalabilidade para as aplicações e recursos, através de milhares de máquinas (hardware) disponíveis em data centers espalhados por várias regiões do mundo.',
         color: colors.yellow
     },
     {
         orientation: 'right',
-        image: icon3,
-        title: 'Nativo da nuvem3',
-        description: 'Funciona em qualquer dispositivo que tenha um navegador web, seja on-line ou off-line.',
-        color: colors.yellow
+        image: logo,
+        description: 'Data centers ajudam a conectar e capacitar nossas vidas diárias, com centenas deles armazenando e gerenciando dados em todo o mundo.',
+        color: colors.red
+    },
+    {
+        orientation: 'left',
+        image: logo,
+        description: 'Os data centers do Azure são edifícios físicos localizados em todo o mundo, abrigando um grupo de servidores de computadores em rede – cada um equipado com energia, refrigeração e rede independentes.',
+        color: colors.red
     },
     {
         orientation: 'right',
-        image: icon4,
-        title: 'Nativo da nuvem4',
-        description: 'Funciona em qualquer dispositivo que tenha um navegador web, seja on-line ou off-line.',
+        image: logo,
+        description: 'O Azure oferece aos clientes a flexibilidade de implantar aplicativos no lugar que eles precisam.',
         color: colors.red
     },
 ]

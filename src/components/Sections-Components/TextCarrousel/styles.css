@@ -1,0 +1,69 @@
+.text-carrousel-wrapper {
+    color: #660099;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.text-carrousel-wrapper .text h3 {
+    margin-bottom: 1.5rem;
+}
+
+.text-carrousel-wrapper .text img {
+    position: relative;
+    width: 100%;
+    max-width: 35rem;
+    margin-left: 0rem;
+    left: -10rem;
+}
+
+.text-carrousel-wrapper .carrousel .slick-slider {
+    box-shadow: 20px 10px 20px 0px #bd4aff;
+    border: 2px solid #660099;
+    height: 100%;
+    position: relative;
+}
+
+.text-carrousel-wrapper .carrousel {
+    position: relative;
+    width: 50%;
+}
+
+.text-carrousel-wrapper .carrousel .item {
+    padding: 2rem;
+    height: 100%;
+}
+
+.text-carrousel-wrapper .carrousel .item p {
+    color: #000;
+}
+
+.text-carrousel-wrapper .carrousel .item p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.text-carrousel-wrapper .carrousel .controls {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.text-carrousel-wrapper .carrousel .controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.text-carrousel-wrapper .carrousel .controls button img {
+    width: 3rem;
+}
+
+.text-carrousel-wrapper .carrousel .controls button.prev img {
+    transform: scaleX(-1);
+}

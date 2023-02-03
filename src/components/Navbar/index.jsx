@@ -15,13 +15,13 @@ const Navbar = () => {
             functions: () => updateMenu()
         },
         {
-            name: 'Abas',
-            to: 'tab',
+            name: 'Serviços Cloud',
+            to: 'servicos-cloud',
             functions: () => updateMenu()
         },
         {
-            name: 'Carrossel',
-            to: 'carrousel',
+            name: 'Cloud Azure',
+            to: 'cloud-azure',
             functions: () => updateMenu()
         },
         {
@@ -30,33 +30,18 @@ const Navbar = () => {
             functions: () => updateMenu()
         },
         {
-            name: 'Carrossel Circular',
-            to: 'circular-carrousel',
+            name: 'Cloud Azure',
+            to: 'tab-view',
             functions: () => updateMenu()
         },
         {
-            name: 'Slider Show Down',
-            to: 'show-down-slider',
+            name: 'Posição do Mercado',
+            to: 'mercado',
             functions: () => updateMenu()
         },
         {
-            name: 'Tooltip / Vídeo',
-            to: 'tooltip',
-            functions: () => updateMenu()
-        },
-        {
-            name: 'Flip Cards',
-            to: 'flip-cards',
-            functions: () => updateMenu()
-        },
-        {
-            name: 'Saiba Mais',
-            to: 'saiba-mais',
-            functions: () => updateMenu()
-        },
-        {
-            name: 'Escrolável / DnD',
-            to: 'scrollable',
+            name: 'Cloud Azure',
+            to: 'fim',
             functions: () => updateMenu()
         },
     ]
