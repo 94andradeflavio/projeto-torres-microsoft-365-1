@@ -16,10 +16,22 @@
     box-shadow: 20px 10px 20px 0px #bd4aff;
 }
 
-.carrousel-wrapper .item p {
+.carrousel-wrapper .item .text {
     color: #000;
     padding: 2rem 1rem;
+}
+
+.carrousel-wrapper .item .text p {
+    margin-bottom: 1rem;
+}
+
+.carrousel-wrapper .item .text .button-area button.carrousel-modal {
     font-size: 1.4rem;
+    color: #fff;
+    background-color: #670099;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
 }
 
 .carrousel-wrapper .controls {
@@ -71,6 +83,73 @@
     color: #d9d9d9;
     opacity: 1;
 }
+
+.modal-overlay {
+    background-color: rgba(0,0,0,.5);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #BD4AFF;
+    position: relative;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 10px;
+    padding: 4rem 1rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.modal-content p {
+    color: #fff;
+}
+
+.modal-content button.close {
+    --size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #660099;
+    color: #fff;
+    border: 2px solid #660099;
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.modal-content button.close span {
+    font-size: 2rem;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .modal-content button.close:hover {
+    color: #fff;
+    background-color: #660099;
+} */
 
 @media screen and (max-width: 768px) {
     .carrousel-wrapper {

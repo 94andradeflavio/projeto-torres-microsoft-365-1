@@ -15,7 +15,6 @@ import VerticalAccordion from '../../components/Sections-Components/VerticalAcco
 
 // Backgrounds
 import bg1 from '../../assets/images/bg-1.png'
-import accordionBg from '../../assets/images/accordion-bg.png'
 import cutWhiteSmallBg from '../../assets/images/cut-white-small-bg.png'
 import cutWhiteBg from '../../assets/images/cut-white-bg.png'
 import mask from '../../assets/images/mask.png'
@@ -23,6 +22,8 @@ import mask from '../../assets/images/mask.png'
 // Images
 import iwt1 from '../../assets/images/imageWithText/img-1.png'
 import iwt2 from '../../assets/images/imageWithText/img-2.png'
+import iwt3 from '../../assets/images/imageWithText/img-3.png'
+import iwt4 from '../../assets/images/imageWithText/img-4.png'
 import world from '../../assets/images/world.png'
 
 // retranca
@@ -43,6 +44,7 @@ const Home = () => {
                     <Logo />
                 </Container>
             </Section>
+
             <Section bgColor='#640196' customClass='mask-effect' bgMask={ mask }>
                 <Container>
                     <ImageWithText 
@@ -65,6 +67,7 @@ const Home = () => {
                     <SmallerCarrousel />
                 </Container>
             </Section>
+
             <Section
                 bg={ cutWhiteSmallBg }
                 lineBG='#bd4aff'
@@ -74,15 +77,73 @@ const Home = () => {
                     <Carrousel />
                 </Container>
             </Section>
+
+            <Section bgColor='#460169' bgMask={ mask } customClass='iwt-section'>
+                <Container>
+                    <ImageWithText 
+                        imgSource={iwt2} 
+                        personalClass='iwt-1' 
+                        imgStyle={{
+                            maxWidth: '20rem',
+                            boxShadow: '20px 10px 20px 0px #bd4aff'
+                        }}>
+                        <p>
+                            Com o crescimento da modalidade de trabalho home office, é necessário 
+                            o investimento em aplicações inteligentes e eficazes.
+                        </p>
+                        <p>
+                            Do ponto de vista empresarial, um dos desafios é orientar o trabalho dos 
+                            colaboradores aos objetivos, metas e resultados.
+                        </p>
+                    </ImageWithText>
+                    <ImageWithText 
+                        imgSource={iwt3} 
+                        reverse
+                        personalClass='iwt-1' 
+                        imgStyle={{
+                            maxWidth: '20rem',
+                            boxShadow: '20px 10px 20px 0px #bd4aff'
+                        }}>
+                        <p>
+                            O que confirma isso, é que as expectativas dos funcionários mudaram. O relatório do Índice de 
+                            Tendência do Trabalho do ano de 2020 mostrou que, enquanto 73% dos funcionários desejam ter a 
+                            opção de continuar trabalhando remotamente, 67% querem mais engajamento presencial. Fazendo 
+                            com que tenhamos um novo normal estabelecido em um mundo híbrido.
+                        </p>
+                        <p>
+                            Além disso, ainda existem os nômades digitais, trabalhadores que possuem 
+                            maiores liberdades de onde e quando trabalham e a modalidade presencial, 
+                            com todas as suas demandas e necessidades.
+                        </p>
+                    </ImageWithText>
+                    <ImageWithText 
+                        imgSource={iwt4} 
+                        personalClass='iwt-1' 
+                        imgStyle={{
+                            maxWidth: '20rem',
+                            boxShadow: '20px 10px 20px 0px #bd4aff'
+                        }}>
+                        <p>
+                            Como podemos observar, o mundo do trabalho atual é complexo, havendo 
+                            em um mesmo cenário trabalhadores que atuam home office, na modalidade 
+                            híbrida, presencialmente e, ainda, sem um lugar fixo, como os nômades 
+                            digitais.
+                        </p>
+                        <p>
+                            Para cada uma dessas modalidades, o Microsoft 365 possui soluções, 
+                            fornecendo vantagens que facilitam o dia a dia no trabalho:
+                        </p>
+                    </ImageWithText>
+                </Container>
+            </Section>
+
             <Section
-                customClass='bg-vertical-accordion'
-                lineBG='#bd4aff' 
-                bg={ accordionBg }
-                id='accordion'>
+                bgColor='#fff'>
                 <Container>
                     <VerticalAccordion />
                 </Container>
             </Section>
+
             <Section bgColor='#460169' customClass='cloud-azure' id='tab-view'  bgMask={ mask }>
                 <Container>
                     <h4><b>Cloud Azure</b></h4>
@@ -109,6 +170,7 @@ const Home = () => {
                     <TabViewWithImage />
                 </Container>
             </Section>
+
             <Section bg={ cutWhiteBg } bgSize='100% 100%' customClass='mercado' id='mercado'>
                 <Container>
                     <picture className="world">
@@ -120,6 +182,7 @@ const Home = () => {
                     <HorizontalAccordion />
                 </Container>
             </Section>
+
             <Section bgColor='#210131' customClass='iwt-2' bgMask={ mask } id='fim'>
                 <Container>
                     <ImageWithText 

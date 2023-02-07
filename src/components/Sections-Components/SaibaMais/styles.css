@@ -96,15 +96,23 @@
 }
 
 .modal-content button.close {
+    position: relative;
     background-color: #fff;
     color: #660099;
     border: 2px solid #660099;
     border-radius: 2rem;
-    font-size: 1.3rem;
     padding: .5rem 1rem;
     margin-top: 2rem;
     cursor: pointer;
     transition: .2s linear;
+}
+
+.modal-content button.close span {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal-content button.close:hover {

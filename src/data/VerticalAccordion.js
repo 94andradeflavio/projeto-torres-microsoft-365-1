@@ -1,48 +1,46 @@
 export const data = [
     {
-        title: "Serviços de Aplicativos",
+        title: "Trabalho Híbrido",
         description: [
-            "<span>Azure Application Services</span> fornece uma plataforma de hospedagem escalonável que permite aos desenvolvedores criar aplicativos baseados na web usando estruturas de desenvolvimento populares.",
-            "Os clientes podem facilmente implantar, operar e dimensionar seus aplicativos em um ambiente totalmente gerenciado."
+            "Pensando em garantir engajamento no sistema híbrido e nômade, a visão dinâmica do Teams oferece experiências de encontro mais igualitárias com o ajuste automático no aplicativo, à medida que os participantes entram na reunião, fazendo com que vejam sala e conteúdo com facilidade.",
+            "O modo Companion, no Teams móvel, fornece aos participantes da sala acesso rápido a recursos de engajamento, como chat, reações ao vivo e o Microsoft Whiteboard, o que facilita a comunicação entre quem está em home office e quem está na empresa, já que permite a colaboração visual de quem está fisicamente na sala ou não.",
+            'No Microsoft 365 e no Teams, há uma melhora nas experiências de trabalho criadas para colaboração síncrona e assíncrona, ajudando na criação e expressão e processos de negócio no fluxo de trabalho.',
+            'No Microsoft 365, a categoria Espaço de Trabalho é uma nova forma que o Microsoft Places criou para resolver os desafios exclusivos do trabalho híbrido.',
+            'O Microsoft Places facilita a gestão do trabalho híbrido, ajudando a entender quem está no escritório e em que momento, onde os colaboradores estarão sentados, quais reuniões irão acontecer presencialmente e também ajuda a reservar espaço nos dias em que a equipe estará presencialmente no escritório.',
+            'O Microsoft Places auxilia os líderes a otimizar o investimento na propriedade, ajudando a entender como as pessoas usam o escritório.'
         ]
     },
     {
-        title: "Azure Functions",
+        title: "Espaços de Trabalho",
         description: [
-            "Permite que os clientes criem aplicativos sem servidor controlados por eventos sem precisar de nenhum código. O cliente só precisa estipular o código mais importante na linguagem mais produtiva para o seu negócio, e o <span>Functions</span> manipula o restante. Ele também fornece toda a infraestrutura e os recursos continuamente atualizados necessários para executar os aplicativos.",
+            "O recurso de hora e local do Teams e Outlook facilita o agendamento de reuniões presenciais, pois permite a especificação e ajuste de hora em hora de quem estará trabalhando no escritório ou remotamente.",
+            'A nova experiência de hot desking nas telas do Microsoft Teams permite que as pessoas localizem e reservem espaços de trabalho flexíveis no escritório.',
+            'Novos recursos do Outlook capturam detalhes sobre quando e onde os colegas de equipe estão trabalhando, e como eles participarão das reuniões.'
         ]
     },
     {
-        title: "Container Instances e Kubernetes Services",
+        title: "Interação nas Reuniões",
         description: [
-            "Implante aplicativos usando um serviço totalmente gerenciado. Assim, o cliente pode se concentrar em projetar e compilar aplicativos em vez de precisar gerenciar a infraestrutura que os executa. O <span>Azure Kubernetes Service (AKS)</span> oferece a maneira mais rápida de começar a desenvolver e implantar aplicativos nativos de nuvem no Azure."
+            "O recurso de Excel Live transforma a maneira como as pessoas colaboram em reuniões, permitindo a edição em tempo real, dentro do próprio Teams.",
+            'O Teams Live Share, com visualização prévia, transforma qualquer aplicativo compartilhado em uma reunião do Teams em uma experiência colaborativa multiusuário em tempo real, em que os usuários podem interagir, anotar e colaborar diretamente por meio da janela de reunião.',
+            'O Cameo é uma nova experiência do PowerPoint, que integra perfeitamente o feed da câmera do Teams à apresentação, o que facilita a comunicação entre os colaboradores.',
+            'o Loop elimina as barreiras entre os aplicativos para habilitar a colaboração fluida na maneira como as pessoas pensam, planejam e criam juntas.'
         ]
     },
     {
-        title: "Banco de dados SQL Azure",
+        title: "Inteligência Artificial",
         description: [
-            "Banco de dados em memória e totalmente gerenciados, abrangendo mecanismos de banco de dados de proprietário e de código aberto.",
-            "O cliente tem flexibilidade e simplicidade na hora de criar seu próximo aplicativo, com um banco de dados multimodelo que pode escalar conforme necessário e receber insights quase em tempo real, sem afetar o desempenho da plataforma."
-        ]
+            "O Comentários do Microsoft Viva permite que os gerentes e os líderes de equipe conheçam suas equipes a ponto de obter informações rápidas e confidenciais quando precisarem delas, no intuito de compreender as necessidades da equipe continuamente e tomar atitude no momento certo;",
+            "A IA de Conteúdo é uma nova categoria de soluções de tecnologia que usa os avanços na nuvem e na inteligência artificial para transformar a forma como o conteúdo é criado, processado e descoberto, capacitando as pessoas e automatizando fluxos de trabalho em escala;",
+            'o Microsoft Syntex, que integra a inteligência artificial de conteúdo no fluxo de trabalho com serviços como processamento de conteúdo, resumo de conteúdo, assinatura eletrônica e muito mais, para ajudar você a aprimorar, gerenciar e conectar seu conteúdo'
+        ]   
     },
     {
-        title: "AI e Machine Learning",
+        title: "Acesso a Informação",
         description: [
-            "Os serviços de inteligência artificial e Machine Learning no Azure oferecem aos desenvolvedores e cientistas de dados uma experiência ampla e produtiva para criar, treinar e implantar modelos de aprendizado de máquina mais rapidamente.",
-            "O Azure Machine Learning permite que o cliente arraste e solte conjuntos de dados e componentes para criar pipelines de ML."
-        ]
-    },
-    {
-        title: "Data Centers",
-        description: [
-            "Os Data Centers Regionais do Azure permitem que o cliente distribua seus aplicativos globalmente para que ele possa colocar seus dados e aplicativos onde mais precisam, melhorando o desempenho do aplicativo para seus clientes finais (consumidores). Tudo isso com alta segurança e confiabilidade."
-        ]
-    },
-    {
-        title: "Portal Azure",
-        description: [
-            "O Portal Azure permite criar, configurar e controlar todos os serviços e recursos usando uma interface baseada na web, unificada e fácil de usar.",
-            "O <span>Microsoft Azure</span> oferece uma ampla variedade de serviços de computação em nuvem, em que o gerenciamento de infraestrutura, a escalabilidade, disponibilidade e segurança são gerenciados para o cliente, poupando tempo e dinheiro."
+            "A nova solução do Microsoft 365 permite acessar o PC na nuvem diretamente da barra de tarefas do Windows 11 ou menu Iniciar e, sem seguida, transmitir a experiência completa do Windows, todos os aplicativos, todas as configurações e todo o conteúdo, para qualquer dispositivo.",
+            "Os relatórios do Windows Update para Empresas aproveitarão as pastas de trabalho do Azure para criar relatórios de implantações mais modulares e personalizáveis a fim de se adaptarem melhor a suas necessidades.",
+            'As Mensagens organizacionais ajudam a se comunicar com as pessoas diretamente na interface de usuário do Windows UX, ajudando a integrar funcionários e fornecendo lembretes de treinamentos importantes.'
         ]
     },
 ]

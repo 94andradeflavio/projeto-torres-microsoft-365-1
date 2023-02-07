@@ -157,20 +157,12 @@ section.bg-vertical-accordion::after {
     margin-bottom: 2rem;
 }
 
-.cloud-azure .section-mask::before {
+.cloud-azure .section-mask::before,
+.iwt-2 .section-mask::before,
+.iwt-section .section-mask::before {
     content: '';
     position: absolute;
     background-color: rgba(70, 1, 105, .95);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.iwt-2 .section-mask::before {
-    content: '';
-    position: absolute;
-    background-color: rgb(33, 1, 49, .95);
     top: 0;
     left: 0;
     width: 100%;

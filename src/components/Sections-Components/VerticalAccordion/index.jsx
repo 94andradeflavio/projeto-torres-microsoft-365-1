@@ -3,8 +3,6 @@ import './styles.css';
 
 import { data } from "../../../data/VerticalAccordion";
 
-import logo from '../../../assets/images/logo/logo2.png'
-
 const VerticalAccordion = () => {
     const [accordion, setAccordion] = useState(-1)
 
@@ -18,13 +16,6 @@ const VerticalAccordion = () => {
 
     return (
         <div className="vertical-accordion-wrapper">
-            <div className="side-text">
-                <img src={ logo } alt="logo" />
-                <p>
-                    O Azure fornece armazenamento baseado em nuvem, em que o cliente pode usar para armazenar seus aplicativos e fazer backup de seus dados 
-                    com segurança e confiabilidade.
-                </p>
-            </div>
             <div className="vertical-accordion">
                 <div className="accordion-wrapper">
                     { data.map((item, index) => (
