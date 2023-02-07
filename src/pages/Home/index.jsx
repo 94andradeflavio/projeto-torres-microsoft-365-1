@@ -3,6 +3,7 @@ import './index.css'
 
 // Components
 import Section from '../../components/Section';
+import Carrousel from '../../components/Sections-Components/Carrousel';
 import ClickTip from '../../components/Sections-Components/ClickTip';
 import Container from '../../components/Container';
 import Logo from '../../components/Sections-Components/Logo';
@@ -11,7 +12,6 @@ import SmallerCarrousel from '../../components/Sections-Components/SmallerCarrou
 import TabViewWithImage from '../../components/Sections-Components/TabViewWithImage';
 import TextCarrousel from '../../components/Sections-Components/TextCarrousel';
 import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
-import VerticalTabViewWithImage from '../../components/Sections-Components/VerticalTabViewWithImage';
 
 // Backgrounds
 import bg1 from '../../assets/images/bg-1.png'
@@ -52,32 +52,17 @@ const Home = () => {
                         imgStyle={{
                             maxWidth: '20rem'
                         }}>
+                        <h3>Mercado</h3>
                         <p id='servicos-cloud'>
-                            Os serviços de Cloud fazem parte de um mercado que sempre fomentou a inovação com grandes 
-                            avanços tecnológicos.
+                            Com o crescimento da modalidade de trabalho home office, é necessário o 
+                            investimento em aplicações inteligentes e eficazes.
                         </p>
                         <p>
-                            Com o Vivo Cloud Azure, o cliente potencializa o alcance de suas metas e agiliza sua 
-                            transformação digital.
-                        </p>
-                        <p>
-                            É importante que você saiba que cada potencial cliente tem uma necessidade. Então, prepare-se 
-                            para mergulhar em experiências práticas e teóricas sobre o que é o Azure, como o produto 
-                            funciona e qual a sua posição no mercado.
+                            Do ponto de vista empresarial, um dos desafios é orientar o trabalho dos 
+                            colaboradores aos objetivos, metas e resultados.
                         </p>
                     </ImageWithText>
                     <SmallerCarrousel />
-                    <div className="text-box" value="1">
-                        <p>
-                            Com o Cloud Azure, o cliente tem flexibilidade para inovar no seu negócio e ainda conta com 
-                            a modalidade de pagamento baseada em consumo (on demand), que permite a redução de custos 
-                            operacionais com uma configuração de infraestrutura realmente mais aderente às suas necessidades.
-                        </p>
-                        <p>
-                            O Azure é destinado à execução de aplicativos e serviços com base nos conceitos da computação 
-                            em nuvem híbrida.
-                        </p>
-                    </div>
                 </Container>
             </Section>
             <Section
@@ -86,22 +71,7 @@ const Home = () => {
                 customClass='cloud-azure-section'
                 id='cloud-azure'>
                 <Container>
-                    <div className="text-box" value="2">
-                        <h4>
-                            Cloud Azure<br/>
-                            <span>Sua arquitetura e seus serviços</span>
-                        </h4>
-                        <p>
-                            O Azure oferece a liberdade de criar, gerenciar e implantar aplicativos em uma vasta rede 
-                            global. Por ser um conjunto de serviços em nuvem, o cliente Azure poderá usar suas 
-                            estruturas e ferramentas favoritas.
-                        </p>
-                        <p>
-                            Vamos conhecer agora como funciona a arquitetura Azure e seus principais serviços.
-                        </p>
-                    </div>
-                    <ClickTip text='Clique nos conceitos para expandir as informações.' center />
-                    <VerticalTabViewWithImage />
+                    <Carrousel />
                 </Container>
             </Section>
             <Section

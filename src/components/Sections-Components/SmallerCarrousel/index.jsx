@@ -38,14 +38,9 @@ const SmallerCarrousel = () => {
                     <div className="flex-area">
                         <img src={image1} alt="" />
                         <div>
-                            <h4>O que é o Microsoft Azure?</h4>
                             <p>
-                                O Microsoft Azure é uma plataforma de nuvem que oferece mais de 200 produtos e serviços.
-                            </p>
-                            <p>
-                                A plataforma garantirá que o cliente esteja pronto para o futuro com as últimas 
-                                tecnologias de ponta em termos de big data, inteligência artificial, realidade 
-                                aumentada, IoT e segurança.
+                                Uma matéria do Olhar Digital de 2020 aponta que, pós-pandemia, 30% 
+                                das empresas devem manter o home office.
                             </p>
                         </div>
                     </div>
@@ -54,14 +49,9 @@ const SmallerCarrousel = () => {
                     <div className="flex-area">
                         <img src={image2} alt="" />
                         <div>
-                            <h4>Como a Vivo atua?</h4>
                             <p>
-                                Em parceria com a Microsoft, a Vivo atua na comercialização dessa solução por meio 
-                                da modalidade de subscrição CSP (Cloud Service Provider). 
-                            </p>
-                            <p>
-                                A parceria Vivo Empresas com a Microsoft pode trazer mais eficiência financeira, 
-                                mobilidade, desempenho e segurança para o seu cliente.
+                                Outra informação apontada foi que o investimento no trabalho remoto 
+                                chega a 90% no que se refere à infraestrutura.
                             </p>
                         </div>
                     </div>
@@ -70,14 +60,9 @@ const SmallerCarrousel = () => {
                     <div className="flex-area">
                         <img src={image1} alt="" />
                         <div>
-                            <h4>Por que o Cloud Azure é necessário?</h4>
                             <p>
-                                O Azure é a única nuvem híbrida consistente, pois oferece produtividade incomparável 
-                                ao desenvolvedor, além de fornecer segurança abrangente e multicamadas. 
-                            </p>
-                            <p>
-                                Contar com os serviços em nuvem é a única maneira de uma empresa ter suas 
-                                informações e soluções disponíveis de maneira rápida e segura.
+                                Podemos perceber que, desde 2020, é tendência que as empresas 
+                                adotem essa modalidade de trabalho.
                             </p>
                         </div>
                     </div>

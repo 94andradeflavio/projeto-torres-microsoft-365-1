@@ -1,34 +1,25 @@
 .carrousel-wrapper {
     width: 90%;
-    margin: 0 auto;
+    margin: 10rem auto;
 }
 
 .carrousel-wrapper .item {
-    background-color: #000;
-    border-radius: 2rem;
     overflow: hidden;
+    display: flex !important;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 1rem;
 }
 
-.carrousel-wrapper .item h3 {
-    background-color: #370054;
-    color: #fe9901;
-    text-align: center;
-    padding: 1rem 2rem;
-    font-size: 2.2rem;
-    font-weight: 400;
+.carrousel-wrapper .item > img {
+    height: 40rem;
+    box-shadow: 20px 10px 20px 0px #bd4aff;
 }
 
 .carrousel-wrapper .item p {
-    background-color: #660099;
+    color: #000;
     padding: 2rem 1rem;
-    font-size: 1.2rem;
-}
-
-.carrousel-wrapper .item[value="4"] p,
-.carrousel-wrapper .item[value="5"] p,
-.carrousel-wrapper .item[value="6"] p {
-    color: #370054;
-    background-color: #b3d682;
+    font-size: 1.4rem;
 }
 
 .carrousel-wrapper .controls {
@@ -49,7 +40,7 @@
 }
 
 .carrousel-wrapper .controls button img {
-    width: 6rem;
+    width: 2.5rem;
 }
 
 .carrousel-wrapper .controls button.next img {
@@ -71,14 +62,14 @@
 }
 
 .carrousel-wrapper .slick-dots li.slick-active button:before {
-    color: #fe9901;
+    color: #670099;
     opacity: 1;
 }
 
 .carrousel-wrapper .slick-dots li button:before {
     font-size: 22px;
-    color: #660099;
-    opacity: .4;
+    color: #d9d9d9;
+    opacity: 1;
 }
 
 @media screen and (max-width: 768px) {

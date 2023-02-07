@@ -5,33 +5,26 @@ import './styles.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import arrowPrev from '../../../assets/images/carrousel/purple-left.png'
-import arrowNext from '../../../assets/images/carrousel/purple-left.png'
+import arrowPrev from '../../../assets/images/carrousel/white-left.png'
+import arrowNext from '../../../assets/images/carrousel/white-left.png'
+
+// images
+import image1 from '../../../assets/images/carrousel/img1.png'
+import image2 from '../../../assets/images/carrousel/img2.png'
+import image3 from '../../../assets/images/carrousel/img3.png'
 
 const data = [
     {
-        title: 'Produto 01',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem ipsam corporis consectetur minima facilis sequi totam numquam culpa nihil mollitia tempora architecto cumque hic deleniti, vel voluptatum sint dignissimos?'
+        image: image1,
+        text: 'O levantamento foi realizado com 400 empresas de 17 países, incluindo o Brasil. Todas as organizações participantes possuem mais de 2.500 funcionários; portanto, são consideradas de grande porte. Elas são dos mais variados ramos da economia, como: educação, energia, saúde, tecnologia, varejo, finanças e administração pública.'
     },
     {
-        title: 'Produto 02',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem ipsam corporis consectetur minima facilis sequi totam numquam culpa nihil mollitia tempora architecto cumque hic deleniti, vel voluptatum sint dignissimos?'
+        image: image2,
+        text: 'Esse dado é importante para demonstrar que as empresas que você negocia são o seu maior público-alvo. O pacote Microsoft 365 oferece as ferramentas ideais para a implementação do home office.'
     },
     {
-        title: 'Produto 03',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem ipsam corporis consectetur minima facilis sequi totam numquam culpa nihil mollitia tempora architecto cumque hic deleniti, vel voluptatum sint dignissimos?'
-    },
-    {
-        title: 'Produto 04',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem ipsam corporis consectetur minima facilis sequi totam numquam culpa nihil mollitia tempora architecto cumque hic deleniti, vel voluptatum sint dignissimos?'
-    },
-    {
-        title: 'Produto 05',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem ipsam corporis consectetur minima facilis sequi totam numquam culpa nihil mollitia tempora architecto cumque hic deleniti, vel voluptatum sint dignissimos?'
-    },
-    {
-        title: 'Produto 06',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem ipsam corporis consectetur minima facilis sequi totam numquam culpa nihil mollitia tempora architecto cumque hic deleniti, vel voluptatum sint dignissimos?'
+        image: image3,
+        text: 'Esse dado é importante para demonstrar que as empresas que você negocia são o seu maior público-alvo. O pacote Microsoft 365 oferece as ferramentas ideais para a implementação do home office.'
     },
 ]
 
@@ -41,19 +34,10 @@ const Carrousel = () => {
     const settings = {
         dots: true,
         arrows: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+        slidesToShow: 1,
+        slidesToScroll: 1,
     };
     
     const prev = () => {
@@ -72,7 +56,7 @@ const Carrousel = () => {
                 { data.map((item, index) => {
                     return (
                         <div className="item" value={ index + 1 } key={index}>
-                            <h3>{ item.title }</h3>
+                            <img src={ item.image } alt="carrousel" />
                             <p>{ item.text }</p>
                         </div>
                     )

@@ -22,6 +22,8 @@ img.retranca {
     margin-bottom: 3rem;
 }
 
+
+
 section.wp-capa::after,
 section.bg-vertical-accordion::after {
     content: '';
@@ -149,6 +151,10 @@ section.bg-vertical-accordion::after {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.mask-effect h3 {
+    margin-bottom: 2rem;
 }
 
 .cloud-azure .section-mask::before {
