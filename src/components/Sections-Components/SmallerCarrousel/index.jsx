@@ -5,10 +5,11 @@ import './styles.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import image1 from '../../../assets/images/carrousel/smallerCarrousel/icon-1.png'
-import image2 from '../../../assets/images/carrousel/smallerCarrousel/icon-2.png'
+import { ReactComponent as Icon1 } from '../../../assets/images/carrousel/smallerCarrousel/icon-1.svg';
+import { ReactComponent as Icon2} from '../../../assets/images/carrousel/smallerCarrousel/icon-2.svg';
+import { ReactComponent as Icon3 } from '../../../assets/images/carrousel/smallerCarrousel/icon-3.svg';
 
-import arrow from '../../../assets/images/carrousel/arrow.png'
+import { ReactComponent as Arrow } from '../../../assets/images/carrousel/arrow.svg';
 
 const SmallerCarrousel = () => {
     const slider = useRef(null)
@@ -36,7 +37,7 @@ const SmallerCarrousel = () => {
             <Slider {...settings} ref={slider}>
                 <div className="item">
                     <div className="flex-area">
-                        <img src={image1} alt="" />
+                        <Icon1 />
                         <div>
                             <p>
                                 Uma matéria do Olhar Digital de 2020 aponta que, pós-pandemia, 30% 
@@ -47,7 +48,7 @@ const SmallerCarrousel = () => {
                 </div>
                 <div className="item">
                     <div className="flex-area">
-                        <img src={image2} alt="" />
+                        <Icon2 />
                         <div>
                             <p>
                                 Outra informação apontada foi que o investimento no trabalho remoto 
@@ -58,7 +59,7 @@ const SmallerCarrousel = () => {
                 </div>
                 <div className="item">
                     <div className="flex-area">
-                        <img src={image1} alt="" />
+                        <Icon3 />
                         <div>
                             <p>
                                 Podemos perceber que, desde 2020, é tendência que as empresas 
@@ -69,8 +70,8 @@ const SmallerCarrousel = () => {
                 </div>
             </Slider>
             <div className="controls">
-                <button className="prev" onClick={prev}><img src={arrow} alt="voltar" /></button>
-                <button className="next" onClick={next}><img src={arrow} alt="avançar" /></button>
+                <button className="prev" onClick={prev}><Arrow /></button>
+                <button className="next" onClick={next}><Arrow /></button>
             </div>
         </div>
     )

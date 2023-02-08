@@ -145,6 +145,34 @@ section.bg-vertical-accordion::after {
     margin-bottom: 2rem;
 }
 
+.solucao-microsoft h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.solucao-microsoft p {
+    margin-bottom: 1.5rem;
+}
+
+.solucao-microsoft .image-with-text p {
+    color: #000;
+}
+
+.solucao-microsoft .above-iwt-text {
+    text-align: left;
+    color: #000;
+    margin-bottom: 10rem;
+}
+
+.solucao-microsoft button.saiba-mais {
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #670099;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
 .mask-effect .section-mask {
     position: relative;
 }
@@ -188,6 +216,49 @@ picture.world img {
 
 section.wp-asian {
     background-position: 5% bottom !important;
+}
+
+.main-modal-content {
+    position: relative;
+    background: #D9AEEE;
+    color: #660099;
+    width: 100%;
+    max-width: 35rem;
+    margin: 0 10px;
+    padding: 2rem 2rem;
+    padding-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main-modal-content button.close {
+    --size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #660099;
+    color: #fff;
+    border: 2px solid #660099;
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.main-modal-content button.close span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button.close span {
+    line-height: 1;
 }
 
 @media screen and (max-width: 768px) {

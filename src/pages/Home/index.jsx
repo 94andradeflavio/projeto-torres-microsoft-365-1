@@ -1,16 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from "react-modal";
 import './index.css'
 
 // Components
 import Section from '../../components/Section';
 import Carrousel from '../../components/Sections-Components/Carrousel';
-import ClickTip from '../../components/Sections-Components/ClickTip';
 import Container from '../../components/Container';
+import ImgPinModals from '../../components/Sections-Components/ImgPinModals';
 import Logo from '../../components/Sections-Components/Logo';
-import HorizontalAccordion from '../../components/Sections-Components/HorizontalAccordion';
 import SmallerCarrousel from '../../components/Sections-Components/SmallerCarrousel'
 import TabViewWithImage from '../../components/Sections-Components/TabViewWithImage';
-import TextCarrousel from '../../components/Sections-Components/TextCarrousel';
 import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
 
 // Backgrounds
@@ -24,6 +23,8 @@ import iwt1 from '../../assets/images/imageWithText/img-1.png'
 import iwt2 from '../../assets/images/imageWithText/img-2.png'
 import iwt3 from '../../assets/images/imageWithText/img-3.png'
 import iwt4 from '../../assets/images/imageWithText/img-4.png'
+import iwt5 from '../../assets/images/imageWithText/img-5.png'
+import iwt6 from '../../assets/images/imageWithText/img-6.png'
 
 // retranca
 import retrancaImg from '../../assets/images/logo/retranca.png'
@@ -32,8 +33,13 @@ import retrancaImg from '../../assets/images/logo/retranca.png'
 import sign from '../../assets/images/sign.png'
 import ImageWithText from '../../components/Sections-Components/ImageWithText';
 
+Modal.setAppElement('#root')
 
 const Home = () => {
+    const [modal, setModal] = useState(false)
+
+    const openModal = () => setModal(true)
+    const closeModal = () => setModal(false)
 
     return (
         <>
@@ -161,8 +167,85 @@ const Home = () => {
                         Clique nos ícones abaixo para ver exemplos de aplicação das facilidades do 
                         Microsoft 365 em diferentes segmentos.
                     </p>
-
-                    
+                    <ImgPinModals />
+                    <p>
+                        Agora que você já viu alguns casos de aplicação, vamos conhecer cases em que 
+                        a Vivo proporcionou a solução ideal para o cliente.
+                    </p>
+                    <ImageWithText
+                        imgSource={iwt5}
+                        imgStyle={{ 
+                            maxWidth: '20rem',
+                            boxShadow: '20px 10px 20px 0px #bd4aff'
+                        }}
+                        customStyle={{
+                            textAlign: 'left'
+                        }}>
+                        <h5>Case Toyota</h5>
+                        <p>
+                            A Toyota tinha o desafio de implementar o Home Office e fazer com que 
+                            seus colaboradores possam participar mais ativamente da organização dos 
+                            arquivos de trabalho.
+                        </p>
+                        <p>
+                            Um ponto de mudança dentro da Toyota é a criação da comunidade 
+                            “know it” - um portal dentro do Teams e SharePoint, onde os funcionários 
+                            encontram informações sobre os aplicativos do Microsoft 365, com 
+                            perguntas, vídeos e troca de informações sobre o uso da tecnologia.
+                        </p>
+                        <button className="saiba-mais" onClick={openModal}>Saiba Mais</button>
+                        <Modal
+                            isOpen={modal}
+                            onRequestClose={closeModal}
+                            overlayClassName="modal-overlay"
+                            className="main-modal-content"
+                            >
+                            <p>
+                                A ferramenta Microsoft Forms também tem incentivado os colaboradores 
+                                a dar sugestões para melhorar o modelo de trabalho e a criação de um 
+                                roteiro digital para definição do local do escritório híbrido.
+                            </p>
+                            <button className="close" onClick={closeModal}><span>&times;</span></button>
+                        </Modal>
+                    </ImageWithText>
+                    <ImageWithText
+                        reverse
+                        imgSource={iwt6}
+                        imgStyle={{ 
+                            maxWidth: '20rem',
+                            boxShadow: '20px 10px 20px 0px #bd4aff'
+                        }}
+                        customStyle={{
+                            textAlign: 'left'
+                        }}>
+                        <h5>Case Ikea</h5>
+                        <p>
+                            A implantação do Microsoft 365 tem ajudado os 166 mil funcionários a 
+                            apoiar a organização em seus esforços de sustentabilidade. Assim, reduzem 
+                            processos baseados em papel e substituem viagens e atendimentos 
+                            presenciais por colaboração digital.
+                        </p>
+                        <p>
+                            A ferramenta modernizou a forma de trabalhar da Ikea, permitindo a 
+                            conexão de mais pessoas, melhorando a comunicação e otimizando processos. 
+                            Para você ter uma ideia, em cinco meses, todos os funcionários já tinham 
+                            acesso ao Teams.
+                        </p>
+                    </ImageWithText>
+                    <div className="above-iwt-text">
+                        <p>
+                            A implantação do Microsoft 365 tem ajudado os 166 mil funcionários a apoiar 
+                            a organização em seus esforços de sustentabilidade. Assim, reduzem processos 
+                            baseados em papel e substituem viagens e atendimentos presenciais por 
+                            colaboração digital.
+                        </p>
+                        <p>
+                            A ferramenta modernizou a forma de trabalhar da Ikea, permitindo a conexão 
+                            de mais pessoas, melhorando a comunicação e otimizando processos. Para você 
+                            ter uma ideia, em cinco meses, todos os funcionários já tinham acesso ao 
+                            Teams.
+                        </p>
+                    </div>
                 </Container>
             </Section>
 
@@ -171,7 +254,9 @@ const Home = () => {
                     <ImageWithText 
                         imgSource={iwt2} 
                         customStyle={{ marginTop: '12rem' }}
-                        imgStyle={{ maxWidth: '20rem' }}>
+                        imgStyle={{ 
+                            maxWidth: '20rem'
+                        }}>
                         <h3>Cloud Azure</h3>
                         <p>
                             Tenha em mente que o Azure possui um <span>portfólio completo de 

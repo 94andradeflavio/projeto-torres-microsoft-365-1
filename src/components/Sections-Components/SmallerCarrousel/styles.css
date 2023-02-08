@@ -25,8 +25,9 @@
     height: 100%;
 }
 
-.smaller-carrousel .flex-area > img {
-    width: 11rem;
+.smaller-carrousel .flex-area > img,
+.smaller-carrousel .flex-area > svg {
+    width: 20rem;
 }
 
 .smaller-carrousel .flex-area > div h4 {
@@ -65,11 +66,14 @@
     cursor: pointer;
 }
 
-.smaller-carrousel .controls button img {
-    width: 3rem;
+.smaller-carrousel .controls button img,
+.smaller-carrousel .controls button svg {
+    width: 2.5rem;
+    fill: #660099;
 }
 
-.smaller-carrousel .controls button.prev img {
+.smaller-carrousel .controls button.prev img,
+.smaller-carrousel .controls button.prev svg {
     transform: scaleX(-1);
 } 
 

@@ -1,0 +1,140 @@
+.imgpinmodals-wrapper {
+    position: relative;
+    margin: 4rem 0;
+}
+
+.imgpinmodals-wrapper img {
+    width: 100%;
+}
+
+.imgpinmodals-wrapper button.pin {
+    --size: 2.2rem;
+
+    background-color: #670099;
+    color: #fff;
+    position: absolute;
+    font-size: calc(var(--size) - .5rem);
+    font-weight: 700;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    top: 0%;
+    left: 0%;
+    transition: transform .3s linear;
+}
+
+.imgpinmodals-wrapper button.pin:hover {
+    transform: scale(1.1);
+}
+
+.imgpinmodals-wrapper button.pin[value="1"] {
+    top: 44%;
+    left: 7%;
+}
+
+.imgpinmodals-wrapper button.pin[value="2"] {
+    top: 26%;
+    left: 28%;
+}
+
+.imgpinmodals-wrapper button.pin[value="3"] {
+    top: 23%;
+    left: 63%;
+}
+
+.imgpinmodals-wrapper button.pin[value="4"] {
+    top: 23%;
+    left: 87%;
+}
+
+.imgpinmodals-wrapper button.pin[value="5"] {
+    top: 32%;
+    left: 46%;
+}
+
+.imgpinmodals-wrapper button.pin[value="6"] {
+    top: 57%;
+    left: 24%;
+}
+
+.imgpinmodals-wrapper button.pin[value="7"] {
+    top: 53%;
+    left: 60%;
+}
+
+.imgpinmodal-modal-content {
+    position: relative;
+    background: #D9AEEE;
+    color: #660099;
+    width: 100%;
+    max-width: 35rem;
+    margin: 0 10px;
+    padding: 2rem 2rem;
+    padding-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.imgpinmodal-modal-content .number {
+    --size: 3rem;
+
+    position: absolute;
+    background-color: #660099;
+    color: #fff;
+    border: 2px solid #660099;
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+    user-select: none;
+
+    top: -1.4rem;
+    left: 2rem;
+}
+
+.imgpinmodal-modal-content .number span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imgpinmodal-modal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.imgpinmodal-modal-content button.close {
+    --size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #660099;
+    color: #fff;
+    border: 2px solid #660099;
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.imgpinmodal-modal-content button.close span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imgpinmodal-modal-content button.close:hover {
+    color: #fff;
+    background-color: #660099;
+}
