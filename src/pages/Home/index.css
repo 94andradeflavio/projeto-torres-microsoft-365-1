@@ -60,7 +60,7 @@ section.bg-vertical-accordion::after {
 .cloud-azure h4,
 .cloud-azure h6 span,
 .cloud-azure p span {
-    color: #B3D682;
+    color: #83D300;
 }
 
 .cloud-azure h4 {
@@ -133,10 +133,16 @@ section.bg-vertical-accordion::after {
     margin-bottom: 1rem;
 }
 
-.mercado {
+.solucao-microsoft {
     margin-top: -15rem !important;
     padding-top: 9rem;
     z-index: 2 !important;
+    color: #660099;
+    text-align: center;
+}
+
+.solucao-microsoft h3 {
+    margin-bottom: 2rem;
 }
 
 .mask-effect .section-mask {

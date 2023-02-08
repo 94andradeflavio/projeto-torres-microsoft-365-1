@@ -24,7 +24,6 @@ import iwt1 from '../../assets/images/imageWithText/img-1.png'
 import iwt2 from '../../assets/images/imageWithText/img-2.png'
 import iwt3 from '../../assets/images/imageWithText/img-3.png'
 import iwt4 from '../../assets/images/imageWithText/img-4.png'
-import world from '../../assets/images/world.png'
 
 // retranca
 import retrancaImg from '../../assets/images/logo/retranca.png'
@@ -144,42 +143,26 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Section bgColor='#460169' customClass='cloud-azure' id='tab-view'  bgMask={ mask }>
+            <Section bgColor='#460169' customClass='cloud-azure' bgMask={ mask }>
                 <Container>
-                    <h4><b>Cloud Azure</b></h4>
-                    <p>Conheça suas características</p>
-
-                    <p>O <span>Vivo Cloud Azure</span> conta com uma gama de funcionalidades que garantem apoio tecnológico ao negócio do cliente.</p>
-                    <p>Suas características técnicas são divididas em oito blocos, sendo eles:</p>
-
-                    <div className="block-area">
-                        <div className="block"><p>Administração</p></div>
-                        <div className="block"><p>Armazenamento</p></div>
-                        <div className="block"><p>Segurança</p></div>
-                        <div className="block"><p>Nuvem híbrida</p></div>
-                        <div className="block"><p>Computação</p></div>
-                        <div className="block"><p>Banco de dados</p></div>
-                        <div className="block"><p>Mídia e CDN</p></div>
-                        <div className="block"><p>Rede</p></div>
-                    </div>
-
-                    <div className="content-center">
-                        <h6><span>Conheça cada característica detalhadamente.</span></h6>
-                        <ClickTip text='Clique nos conceitos para expandir as informações.' whiteTheme />
-                    </div>
+                    <h4><b>Microsoft 365</b></h4>
+                    <p>
+                        As ferramentas da solução Microsoft 365 possibilitam acessibilidade para 
+                        todos os tamanhos de empresas, um ambiente ágil e integrado.
+                    </p>
                     <TabViewWithImage />
                 </Container>
             </Section>
 
-            <Section bg={ cutWhiteBg } bgSize='100% 100%' customClass='mercado' id='mercado'>
+            <Section bg={ cutWhiteBg } bgSize='100% 100%' customClass='solucao-microsoft' id='mercado'>
                 <Container>
-                    <picture className="world">
-                        <h3>Posição de Mercado</h3>
-                        <img src={ world } alt="mapa mundi" />
-                    </picture>
-                    <TextCarrousel />
-                    <ClickTip text='Clique nos conceitos para expandir as informações.' center />
-                    <HorizontalAccordion />
+                    <h3>Solução Microsoft 365</h3>
+                    <p>
+                        Clique nos ícones abaixo para ver exemplos de aplicação das facilidades do 
+                        Microsoft 365 em diferentes segmentos.
+                    </p>
+
+                    
                 </Container>
             </Section>
 

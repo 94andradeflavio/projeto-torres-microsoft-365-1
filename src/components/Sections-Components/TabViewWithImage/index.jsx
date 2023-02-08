@@ -25,6 +25,11 @@ const TabViewWithImage = () => {
                     {data[indexItem].icon}
                     <h4>{ data[indexItem].title }</h4>
                 </div>
+                <div className="images">
+                    { data[indexItem].images.map((img, index) => (
+                        <img src={ img } alt={ img } key={index} />
+                    )) }
+                </div>
                 <div className="text-area">
                     { data[indexItem].texts.map(item => (
                         <div className="text" key={item.text}>
