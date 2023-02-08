@@ -65,6 +65,7 @@ section.bg-vertical-accordion::after {
 
 .cloud-azure h4 {
     font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .cloud-azure .container > p {
@@ -117,7 +118,7 @@ section.bg-vertical-accordion::after {
 }
 
 .iwt-2 {
-    margin-top: -11rem !important;
+    margin-top: -12rem !important;
 }
 
 .iwt-2 h3,
@@ -146,7 +147,7 @@ section.bg-vertical-accordion::after {
 }
 
 .solucao-microsoft h5 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 

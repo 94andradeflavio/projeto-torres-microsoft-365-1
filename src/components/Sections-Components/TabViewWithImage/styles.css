@@ -123,12 +123,11 @@
 }
 
 .tab-view-with-image .content .text-area .text p {
-    font-size: 1.4rem;
     color: #000;
 }
 
 .tab-view-with-image .content .text-area .text h5 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #660099; 
     margin-bottom: 1rem;
 }
