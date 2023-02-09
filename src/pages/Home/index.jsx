@@ -53,17 +53,18 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Section bgColor='#640196' customClass='mask-effect' bgMask={ mask }>
+            <Section bgColor='#640196' customClass='mask-effect' id='mercado' bgMask={ mask }>
                 <Container>
                     <ImageWithText 
                         imgSource={iwt1} 
                         personalClass='iwt-1'
                         reverse 
                         imgStyle={{
-                            maxWidth: '20rem'
+                            maxWidth: '20rem',
+                            boxShadow: '20px 10px 20px 0px #bd4aff'
                         }}>
                         <h3>Mercado</h3>
-                        <p id='servicos-cloud'>
+                        <p>
                             Com o crescimento da modalidade de trabalho home office, é necessário o 
                             investimento em aplicações inteligentes e eficazes.
                         </p>
@@ -152,7 +153,7 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Section bgColor='#460169' customClass='cloud-azure' bgMask={ mask }>
+            <Section bgColor='#460169' customClass='cloud-azure' id='microsoft-365' bgMask={ mask }>
                 <Container>
                     <h4><b>Microsoft 365</b></h4>
                     <p>
@@ -163,7 +164,7 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Section bg={ cutWhiteBg } bgSize='100% 100%' customClass='solucao-microsoft' id='mercado'>
+            <Section bg={ cutWhiteBg } bgSize='100% 100%' customClass='solucao-microsoft' id='solucao-microsoft'>
                 <Container>
                     <h3>Solução Microsoft 365</h3>
                     <p>
@@ -282,7 +283,7 @@ const Home = () => {
                             </li>
                         </ul>
                     </ImageWithText>
-                    
+
                     <Video title='Case Grupo Sossai' embedId={ 'zHuk_Q9K0Tk' } />
 
                     <h5 className='title-iwt'>O que aprendemos com esse exemplo?</h5>

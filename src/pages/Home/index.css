@@ -119,11 +119,14 @@ section.bg-vertical-accordion::after {
 
 .video-iwt {
     margin-top: -13rem !important;
+}
+
+.video-iwt .container {
     padding-top: 10rem;
 }
 
 .video-iwt h5.title-iwt {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: center;
     margin-top: 5rem;
     margin-bottom: 2rem;

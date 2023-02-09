@@ -15,32 +15,22 @@ const Navbar = () => {
             functions: () => updateMenu()
         },
         {
-            name: 'Serviços Cloud',
-            to: 'servicos-cloud',
-            functions: () => updateMenu()
-        },
-        {
-            name: 'Cloud Azure',
-            to: 'cloud-azure',
-            functions: () => updateMenu()
-        },
-        {
-            name: 'Acordeon',
-            to: 'accordion',
-            functions: () => updateMenu()
-        },
-        {
-            name: 'Cloud Azure',
-            to: 'tab-view',
-            functions: () => updateMenu()
-        },
-        {
-            name: 'Posição do Mercado',
+            name: 'Mercado',
             to: 'mercado',
             functions: () => updateMenu()
         },
         {
-            name: 'Cloud Azure',
+            name: 'Microsoft 365',
+            to: 'microsoft-365',
+            functions: () => updateMenu()
+        },
+        {
+            name: 'Solução Microsoft 365',
+            to: 'solucao-microsoft',
+            functions: () => updateMenu()
+        },
+        {
+            name: 'Case Grupo Sossai',
             to: 'fim',
             functions: () => updateMenu()
         },
