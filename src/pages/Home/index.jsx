@@ -11,6 +11,7 @@ import Logo from '../../components/Sections-Components/Logo';
 import SmallerCarrousel from '../../components/Sections-Components/SmallerCarrousel'
 import TabViewWithImage from '../../components/Sections-Components/TabViewWithImage';
 import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
+import Video from '../../components/Sections-Components/Video';
 
 // Backgrounds
 import bg1 from '../../assets/images/bg-1.png'
@@ -25,6 +26,8 @@ import iwt3 from '../../assets/images/imageWithText/img-3.png'
 import iwt4 from '../../assets/images/imageWithText/img-4.png'
 import iwt5 from '../../assets/images/imageWithText/img-5.png'
 import iwt6 from '../../assets/images/imageWithText/img-6.png'
+import iwt7 from '../../assets/images/imageWithText/img-7.png'
+import iwt8 from '../../assets/images/imageWithText/img-8.png'
 
 // retranca
 import retrancaImg from '../../assets/images/logo/retranca.png'
@@ -249,27 +252,66 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Section bgColor='#210131' customClass='iwt-2' bgMask={ mask } id='fim'>
+            <Section bgColor='#210131' customClass='video-iwt' bgMask={ mask } id='fim'>
                 <Container>
+                    <Video title='Case Grupo Sossai' embedId={ 'n4kNefAcU_A' } />
+                    <h5 className='title-iwt'>O que aprendemos com esse exemplo?</h5>
                     <ImageWithText 
-                        imgSource={iwt2} 
-                        customStyle={{ marginTop: '12rem' }}
+                        imgSource={iwt7} 
+                        customStyle={{ marginTop: '0rem' }}
                         imgStyle={{ 
-                            maxWidth: '20rem'
+                            maxWidth: '20rem',
+                            boxShadow: '20px 10px 20px 0px #bd4aff'
                         }}>
-                        <h3>Cloud Azure</h3>
-                        <p>
-                            Tenha em mente que o Azure possui um <span>portfólio completo de 
-                            funcionalidades</span>, desde a camada de infraestrutura básica (máquina 
-                            virtual, espaço para armazenamento e componentes de rede) até a camada 
-                            de plataforma como serviços.
-                        </p>
-                        <p>
-                            Com essa plataforma, seu cliente tem a liberdade de criar, executar e 
-                            gerenciar aplicativos em várias nuvens com ferramentas e estruturas de 
-                            escolha dele. Consegue imaginar seu cliente tendo todos esses recursos 
-                            graças a sua consultoria?
-                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Oferecer as soluções do pacote Microsoft 365 vai além de implementar tecnologia e conectividade; o Microsoft 365 tira o sonho 
+                                    do cliente do papel e o torna realidade;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Ir ao encontro das necessidades de negócio do cliente é fator de sucesso na venda;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    O Microsoft é a empresa ideal para solucionar questões diversas do cliente que estão relacionadas à tecnologia.
+                                </p>
+                            </li>
+                        </ul>
+                    </ImageWithText>
+                    
+                    <Video title='Case Grupo Sossai' embedId={ 'zHuk_Q9K0Tk' } />
+
+                    <h5 className='title-iwt'>O que aprendemos com esse exemplo?</h5>
+                    <ImageWithText 
+                        imgSource={iwt8} 
+                        customStyle={{ marginTop: '0rem' }}
+                        imgStyle={{ 
+                            maxWidth: '20rem',
+                            boxShadow: '20px 10px 20px 0px #bd4aff'
+                        }}>
+                        <ul>
+                            <li>
+                                <p>
+                                    A redução no volume de aplicações utilizadas pelo cliente otimiza o negócio dele, e o Microsoft consegue condensar, 
+                                    em poucos programas, as funcionalidades que ele precisa;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    O Microsoft garante tempo curto de implementação e soluções simplificadas, alinhadas com a tendência global do home office;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    O pacote Microsoft 365 possibilita o pagamento mensal das licenças, permitindo a flexibilidade de reduzir ou aumentar 
+                                    a quantidade de usuários.
+                                </p>
+                            </li>
+                        </ul>
                     </ImageWithText>
                     <div className="sign-area">
                         <img src={ sign } alt="assinatura" />

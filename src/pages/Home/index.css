@@ -117,21 +117,20 @@ section.bg-vertical-accordion::after {
     align-items: center;
 }
 
-.iwt-2 {
-    margin-top: -12rem !important;
+.video-iwt {
+    margin-top: -13rem !important;
+    padding-top: 10rem;
 }
 
-.iwt-2 h3,
-.iwt-2 p span {
-    color: #B3D682;
+.video-iwt h5.title-iwt {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
-.iwt-2 h3 {
+.video-iwt ul li {
     margin-bottom: 1.5rem;
-}
-
-.iwt-2 p {
-    margin-bottom: 1rem;
 }
 
 .solucao-microsoft {
@@ -193,7 +192,7 @@ section.bg-vertical-accordion::after {
 }
 
 .cloud-azure .section-mask::before,
-.iwt-2 .section-mask::before,
+.video-iwt .section-mask::before,
 .iwt-section .section-mask::before {
     content: '';
     position: absolute;
