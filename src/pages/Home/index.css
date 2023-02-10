@@ -7,14 +7,12 @@ img.retranca {
 }
 
 .sign-area {
-    margin-top: 12rem;
     width: 100%;
     display: flex;
 }
 
 .sign-area img {
     width: 100%;
-    max-width: 450rem;
     margin: 0 auto;
 }
 
