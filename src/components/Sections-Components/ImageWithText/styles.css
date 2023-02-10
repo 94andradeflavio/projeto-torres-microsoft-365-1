@@ -12,10 +12,6 @@
     margin: 0 .5rem;
 }
 
-.image-with-text p {
-    font-size: 1.4rem;
-}
-
 .image-with-text.start {
     align-items: flex-start;
 }

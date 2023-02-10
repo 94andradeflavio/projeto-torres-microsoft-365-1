@@ -2,7 +2,7 @@
     border: 1px solid #BD4AFF;
     padding: .5rem;
     min-height: 3rem;
-    max-width: 20rem;
+    max-width: 30rem;
     color: #660099;
     position: relative;
     display: flex;
@@ -16,6 +16,7 @@
 
 .clicktip-wrapper.center {
     margin: 0 auto;
+    margin-bottom: 4rem;
 }
 
 .clicktip-wrapper::after {

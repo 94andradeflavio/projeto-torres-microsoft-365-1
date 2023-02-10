@@ -5,6 +5,7 @@ import './index.css'
 // Components
 import Section from '../../components/Section';
 import Carrousel from '../../components/Sections-Components/Carrousel';
+import ClickTip from '../../components/Sections-Components/ClickTip'
 import Container from '../../components/Container';
 import ImgPinModals from '../../components/Sections-Components/ImgPinModals';
 import Logo from '../../components/Sections-Components/Logo';
@@ -97,12 +98,13 @@ const Home = () => {
                             boxShadow: '20px 10px 20px 0px #bd4aff'
                         }}>
                         <p>
-                            Com o crescimento da modalidade de trabalho home office, é necessário 
-                            o investimento em aplicações inteligentes e eficazes.
+                            No relatório Microsoft Work Trend Index Report, vemos que 80% dos gerentes acreditam ser fundamental se manterem conectados e 
+                            esperam mais acesso a políticas de trabalho em casa, com maior flexibilidade. Além disso, 66% dos líderes afirmam que em 
+                            suas empresas estão considerando reformular o ambiente de trabalho para que seja inserida a modalidade híbrida. 
                         </p>
                         <p>
-                            Do ponto de vista empresarial, um dos desafios é orientar o trabalho dos 
-                            colaboradores aos objetivos, metas e resultados.
+                            Embora o home office seja uma tendência global, não há como garantir que continuará em formato único, tendo em vista a 
+                            complexidade do mundo do trabalho atual. 
                         </p>
                     </ImageWithText>
                     <ImageWithText 
@@ -149,6 +151,7 @@ const Home = () => {
             <Section
                 bgColor='#fff'>
                 <Container>
+                    <ClickTip text='Clique nos ícones e veja algumas vantagens' center />
                     <VerticalAccordion />
                 </Container>
             </Section>
@@ -238,16 +241,11 @@ const Home = () => {
                     </ImageWithText>
                     <div className="above-iwt-text">
                         <p>
-                            A implantação do Microsoft 365 tem ajudado os 166 mil funcionários a apoiar 
-                            a organização em seus esforços de sustentabilidade. Assim, reduzem processos 
-                            baseados em papel e substituem viagens e atendimentos presenciais por 
-                            colaboração digital.
+                            Após a implantação, a empresa desativou os servidores locais e passou a usar a nuvem, uma tecnologia mais simples, que não ocupa 
+                            espaço físico, é flexível e com custo menor.
                         </p>
                         <p>
-                            A ferramenta modernizou a forma de trabalhar da Ikea, permitindo a conexão 
-                            de mais pessoas, melhorando a comunicação e otimizando processos. Para você 
-                            ter uma ideia, em cinco meses, todos os funcionários já tinham acesso ao 
-                            Teams.
+                            Com isso a Ikea conseguiu reduzir custos e ser mais sustentável, grandes desafios que ela tinha programado em sua agenda de ações.
                         </p>
                     </div>
                 </Container>
