@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Modal from "react-modal";
-import './index.css'
+
+import * as C from './styles'
 
 // Components
 import Section from '../../components/Section';
@@ -46,7 +47,7 @@ const Home = () => {
     const closeModal = () => setModal(false)
 
     return (
-        <>
+        <C.Home>
             <img src={retrancaImg} alt="" className="retranca" />
             <Section bg={bg1} id="start" customClass='wp-capa' >
                 <Container>
@@ -317,7 +318,7 @@ const Home = () => {
                     </div>
                 </Container>
             </Section>
-        </>
+        </C.Home>
     )
 }
 

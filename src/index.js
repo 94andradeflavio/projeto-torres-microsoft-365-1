@@ -2,7 +2,7 @@ import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import WindowController from './pages/WindowController';
 
 // Scorm provider
 import ScormProvider from './contexts/Scorm/ScormProvider';
@@ -18,7 +18,7 @@ root.render(
   // </React.StrictMode>
   <BrowserRouter>
     <ScormProvider>
-      <App />
+      <WindowController />
     </ScormProvider>
   </BrowserRouter>
 );

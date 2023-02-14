@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Onepage template para o projeto Torres"
+    />
+    <link rel="apple-touch-icon" href="./logo192.png" />
+
+    <title>OnePage - Microsoft 365</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <button id="window-controller">Clique para abrir a página</button>
+  </body>
+  <script>
+    window.addEventListener('load', () => {
+      const windowController = document.getElementById('window-controller')
+
+      windowController.addEventListener('click', _ => {
+        window.open(
+          './index.html', 
+          '_blank', 
+          'location=yes,height=768,width=1024,scrollbars=yes,status=yes'
+        )
+      })
+    })
+  </script>
+</html>
