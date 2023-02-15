@@ -3,6 +3,8 @@ import './styles.css';
 
 import { data } from "../../../data/TabviewWithImage";
 
+import { fixImage } from "../../../helpers/fixImage";
+
 
 const TabViewWithImage = () => {
     const [indexItem, setIndexItem] = useState(0)
@@ -27,7 +29,7 @@ const TabViewWithImage = () => {
                 </div>
                 <div className="images">
                     { data[indexItem].images.map((img, index) => (
-                        <img src={ img } alt={ img } key={index} />
+                        <img src={ fixImage(img) } alt={ img } key={index} />
                     )) }
                 </div>
                 <div className="text-area">

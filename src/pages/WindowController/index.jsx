@@ -9,18 +9,7 @@ const WindowController = () => {
     const [title, setTitle] = useState('')
 
     const handleOpenOnePage = () => {
-        console.log('clicou')
         setIsOpen(true)
-    }
-
-    const loadImages = () => {
-        const images = document.querySelectorAll('img')
-
-        console.log(images)
-
-        images.forEach(img => {
-            img.src = `${window.location.href}${img.src}`
-        })
     }
 
     useEffect(() => {
@@ -39,9 +28,13 @@ const WindowController = () => {
                     <>
                         <p>Aguarde... uma nova janela está sendo carregada.</p>
                         <NewWindow
-                            title={title}
+                            title={`Nova Aba - ${title}`}
+                            name={'new-window'}
                             onUnload={() => setIsOpen(false)}
-                            onOpen={loadImages}
+                            features={{
+                                width: 1024,
+                                height: 768
+                            }}
                             >
                             <App />
                         </NewWindow>

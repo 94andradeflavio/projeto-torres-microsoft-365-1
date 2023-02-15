@@ -6,8 +6,6 @@ import './styles.css'
 import map from '../../../assets/images/imgPinModals/map.png'
 import { fixImage } from '../../../helpers/fixImage';
 
-Modal.setAppElement('#map')
-
 const data = [
     {
         title: 'Governo',

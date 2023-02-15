@@ -77,6 +77,10 @@
     transform: scaleX(-1);
 } 
 
+.smaller-carrousel .slick-slide {
+    height: auto;
+}
+
 .smaller-carrousel .slick-dots {
     bottom: -5px;
     left: 0;

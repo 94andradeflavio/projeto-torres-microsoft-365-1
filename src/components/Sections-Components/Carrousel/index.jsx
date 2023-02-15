@@ -15,7 +15,7 @@ import image1 from '../../../assets/images/carrousel/img1.png'
 import image2 from '../../../assets/images/carrousel/img2.png'
 import image3 from '../../../assets/images/carrousel/img3.png'
 
-Modal.setAppElement('#root')
+import { fixImage } from '../../../helpers/fixImage'
 
 const data = [
     {
@@ -73,7 +73,7 @@ const Carrousel = () => {
                 { data.map((item, index) => {
                     return (
                         <div className="item" value={ index + 1 } key={index}>
-                            <img src={ item.image } alt="carrousel" />
+                            <img src={ fixImage(item.image) } alt="carrousel" />
                             <div className="text">
                                 { item.text.map(text => (
                                     <p key={text}>{ text }</p>
@@ -103,6 +103,7 @@ const Carrousel = () => {
                 onRequestClose={closeModal}
                 overlayClassName="modal-overlay"
                 className="modal-content"
+                parentSelector={() => document.querySelector('.App')}
                 >
                 <p>
                     Seu cliente ganha duas vezes: implementa um modelo de negócio que é tendência 

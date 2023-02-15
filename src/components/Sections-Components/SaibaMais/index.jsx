@@ -3,8 +3,6 @@ import './styles.css';
 
 import Modal from "react-modal";
 
-Modal.setAppElement('#root')
-
 const SaibaMais = () => {
     const [modal, setModal] = useState(false)
 

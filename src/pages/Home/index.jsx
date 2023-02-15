@@ -41,8 +41,6 @@ import ImageWithText from '../../components/Sections-Components/ImageWithText';
 // helpers
 import { fixImage } from '../../helpers/fixImage';
 
-Modal.setAppElement('#root')
-
 const Home = () => {
     const [modal, setModal] = useState(false)
 

@@ -1,10 +1,21 @@
 export const fixImage = (image) => {
-    const isDataImage = image.slice(0, 4) === 'data' ? true : false
-    console.log(isDataImage)
+    const typeImage = image.slice(0, 4)
+    const location = window.location.href
 
-    if (isDataImage) {
+    // console.log('imageURL', image)
+
+    if (location.slice(0, 4) === 'file') {
+        return image
+    }
+
+    if (typeImage === 'data') {
         return image
     } else {
-        return `${(window.location.href).slice(0, -1)}${image}`
+        const sliceLocation = (location).slice(0, -1)
+        const replaceString = sliceLocation.replace('/index.htm', '')
+
+        // console.log('location', location)
+
+        return `${replaceString}${image.replace('./static', '/static')}`
     }
 }
