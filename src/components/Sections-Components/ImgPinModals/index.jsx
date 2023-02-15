@@ -4,8 +4,9 @@ import Modal from "react-modal";
 import './styles.css'
 
 import map from '../../../assets/images/imgPinModals/map.png'
+import { fixImage } from '../../../helpers/fixImage';
 
-Modal.setAppElement('#root')
+Modal.setAppElement('#map')
 
 const data = [
     {
@@ -52,7 +53,7 @@ const ImgPinModals = () => {
 
     return (
         <div className="imgpinmodals-wrapper">
-            <img src={ map } alt="mapa da cidade" />
+            <img src={ fixImage(map) } alt="mapa da cidade" />
 
             { data.map((item, index) => (
                 <button 

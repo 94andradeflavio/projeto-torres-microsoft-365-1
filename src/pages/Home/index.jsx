@@ -38,6 +38,9 @@ import retrancaImg from '../../assets/images/logo/retranca.png'
 import sign from '../../assets/images/sign.png'
 import ImageWithText from '../../components/Sections-Components/ImageWithText';
 
+// helpers
+import { fixImage } from '../../helpers/fixImage';
+
 Modal.setAppElement('#root')
 
 const Home = () => {
@@ -48,17 +51,17 @@ const Home = () => {
 
     return (
         <C.Home>
-            <img src={retrancaImg} alt="" className="retranca" />
-            <Section bg={bg1} id="start" customClass='wp-capa' >
+            <img src={fixImage(retrancaImg)} alt="" className="retranca" />
+            <Section bg={fixImage(bg1)} id="start" customClass='wp-capa' >
                 <Container>
                     <Logo />
                 </Container>
             </Section>
 
-            <Section bgColor='#640196' customClass='mask-effect' id='mercado' bgMask={ mask }>
+            <Section bgColor='#640196' customClass='mask-effect' id='mercado' bgMask={ fixImage(mask) }>
                 <Container>
                     <ImageWithText 
-                        imgSource={iwt1} 
+                        imgSource={fixImage(iwt1)} 
                         personalClass='iwt-1'
                         reverse 
                         imgStyle={{
@@ -80,7 +83,7 @@ const Home = () => {
             </Section>
 
             <Section
-                bg={ cutWhiteSmallBg }
+                bg={ fixImage(cutWhiteSmallBg) }
                 lineBG='#bd4aff'
                 customClass='cloud-azure-section'
                 id='cloud-azure'>
@@ -89,10 +92,10 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Section bgColor='#460169' bgMask={ mask } customClass='iwt-section'>
+            <Section bgColor='#460169' bgMask={ fixImage(mask) } customClass='iwt-section'>
                 <Container>
                     <ImageWithText 
-                        imgSource={iwt2} 
+                        imgSource={fixImage(iwt2)} 
                         personalClass='iwt-1' 
                         imgStyle={{
                             maxWidth: '20rem',
@@ -109,7 +112,7 @@ const Home = () => {
                         </p>
                     </ImageWithText>
                     <ImageWithText 
-                        imgSource={iwt3} 
+                        imgSource={fixImage(iwt3)} 
                         reverse
                         personalClass='iwt-1' 
                         imgStyle={{
@@ -129,7 +132,7 @@ const Home = () => {
                         </p>
                     </ImageWithText>
                     <ImageWithText 
-                        imgSource={iwt4} 
+                        imgSource={fixImage(iwt4)} 
                         personalClass='iwt-1' 
                         imgStyle={{
                             maxWidth: '20rem',
@@ -157,7 +160,7 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Section bgColor='#460169' customClass='cloud-azure' id='microsoft-365' bgMask={ mask }>
+            <Section bgColor='#460169' customClass='cloud-azure' id='microsoft-365' bgMask={ fixImage(mask) }>
                 <Container>
                     <h4><b>Microsoft 365</b></h4>
                     <p>
@@ -168,7 +171,7 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Section bg={ cutWhiteBg } bgSize='100% 100%' customClass='solucao-microsoft' id='solucao-microsoft'>
+            <Section bg={ fixImage(cutWhiteBg) } bgSize='100% 100%' customClass='solucao-microsoft' id='solucao-microsoft'>
                 <Container>
                     <h3>Solução Microsoft 365</h3>
                     <p>
@@ -181,7 +184,7 @@ const Home = () => {
                         a Vivo proporcionou a solução ideal para o cliente.
                     </p>
                     <ImageWithText
-                        imgSource={iwt5}
+                        imgSource={fixImage(iwt5)}
                         imgStyle={{ 
                             maxWidth: '20rem',
                             boxShadow: '20px 10px 20px 0px #bd4aff'
@@ -218,7 +221,7 @@ const Home = () => {
                     </ImageWithText>
                     <ImageWithText
                         reverse
-                        imgSource={iwt6}
+                        imgSource={fixImage(iwt6)}
                         imgStyle={{ 
                             maxWidth: '20rem',
                             boxShadow: '20px 10px 20px 0px #bd4aff'
@@ -252,12 +255,12 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Section bgColor='#210131' customClass='video-iwt' bgMask={ mask } id='fim'>
+            <Section bgColor='#210131' customClass='video-iwt' bgMask={ fixImage(mask) } id='fim'>
                 <Container>
                     <Video title='Case Grupo Sossai' embedId={ 'n4kNefAcU_A' } />
                     <h5 className='title-iwt'>O que aprendemos com esse exemplo?</h5>
                     <ImageWithText 
-                        imgSource={iwt7} 
+                        imgSource={fixImage(iwt7)} 
                         customStyle={{ marginTop: '0rem' }}
                         imgStyle={{ 
                             maxWidth: '20rem',
@@ -287,7 +290,7 @@ const Home = () => {
 
                     <h5 className='title-iwt'>O que aprendemos com esse exemplo?</h5>
                     <ImageWithText 
-                        imgSource={iwt8} 
+                        imgSource={fixImage(iwt8)} 
                         customStyle={{ marginTop: '0rem' }}
                         imgStyle={{ 
                             maxWidth: '20rem',
@@ -314,7 +317,7 @@ const Home = () => {
                         </ul>
                     </ImageWithText>
                     <div className="sign-area">
-                        <img src={ sign } alt="assinatura" />
+                        <img src={ fixImage(sign) } alt="assinatura" />
                     </div>
                 </Container>
             </Section>
